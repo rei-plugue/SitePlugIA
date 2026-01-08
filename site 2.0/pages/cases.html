@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Stories | Nestlé & Kozma Clinic AI Implementations | PlugIA</title>
+    <meta name="description" content="Discover how PlugIA's AI solutions helped Nestlé achieve a +7.6% conversion rate and enabled Kozma Clinic to reduce its financial closing process from 21 days to just 1 day.">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="../assets/styles-premium-v2.css" as="style">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles-premium-v2.css">
+    
+    <meta property="og:title" content="PlugIA Success Stories | Real Results for Industry Leaders">
+    <meta property="og:description" content="See how Nestlé and Kozma Clinic achieved significant, measurable results using PlugIA's AI platforms.">
+    <meta property="og:image" content="https://plugia.com.br/img/logo_plugia_250_65_normal.png">
+
+    <style>
+        /* Remover setas dos dropdowns */
+        .header-premium nav a svg,
+        header nav a svg,
+        nav a svg {
+            display: none !important;
+        }
+
+        /* General Section Styling from Template */
+        .page-section { padding: 80px 0; }
+        .bg-white { background-color: white; }
+        .bg-light { background-color: #f8fafc; }
+        
+        .section-title { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; text-align: center; margin-bottom: 20px; }
+        .section-description { font-size: 1.25rem; color: #64748b; text-align: center; max-width: 800px; margin: 0 auto 60px; line-height: 1.6; }
+
+        /* Hero Section */
+        .hero-section { 
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d4a8b 50%, #6a4c93 100%); 
+            padding: 120px 0 80px; 
+            color: white; 
+        }
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        .hero-left {
+            text-align: left;
+        }
+        .hero-right {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .hero-badge { 
+            display: inline-block; 
+            background: rgba(233, 30, 99, 0.15); 
+            border: 1px solid rgba(233, 30, 99, 0.3); 
+            color: #f48fb1; 
+            padding: 10px 20px; 
+            border-radius: 25px; 
+            font-size: 0.9rem; 
+            font-weight: 600; 
+            margin-bottom: 24px; 
+        }
+        .hero-title { 
+            color: white;
+            font-size: 3rem; 
+            font-weight: 800; 
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero-subtitle { 
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.25rem; 
+            font-weight: 400; 
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .btn-primary-hero {
+            background: linear-gradient(135deg, #2d4a8b 0%, #6a4c93 100%);
+            color: white;
+            padding: 14px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .btn-primary-hero:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(45, 74, 139, 0.3);
+        }
+        .hero-stats { 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 32px 48px; 
+            max-width: 400px;
+        }
+        .stat-item { 
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .stat-number { 
+            font-size: 1.8rem; 
+            font-weight: 800; 
+            color: #f48fb1; 
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+        .stat-label { 
+            font-size: 0.85rem; 
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.2;
+            text-align: right;
+        }
+        .hero-cta { display: flex; gap: 16px; }
+
+        /* Case Study Section */
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+        .case-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+        .case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .case-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 24px;
+            text-align: center;
+        }
+        .case-logo {
+            font-size: 2.5rem;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background-color: #f8fafc;
+        }
+        .case-company-info h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin: 0;
+        }
+        .case-company-info p {
+            font-size: 1rem;
+            color: #64748b;
+            margin: 0;
+        }
+        .case-content h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #e91e63;
+            margin-bottom: 8px;
+        }
+        .case-content p {
+            font-size: 1rem;
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        .case-results {
+            margin-top: auto;
+            background-color: #f8fafc;
+            border-radius: 12px;
+            padding: 24px;
+        }
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .result-item {
+            text-align: center;
+        }
+        .result-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1a1a2e;
+        }
+        .result-label {
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        /* Demo Section from Template */
+        .demo-section { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .demo-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .demo-text h2 { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; margin-bottom: 24px; }
+        .demo-text p { font-size: 1.25rem; color: #64748b; margin-bottom: 32px; line-height: 1.6; }
+        .demo-text { text-align: center; }
+        .demo-text .btn-primary { margin: 0 auto; }
+        
+        .demo-form {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .demo-form h3 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+            box-sizing: border-box;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #e91e63;
+            box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.1);
+        }
+        
+        .form-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .btn-primary { 
+            background: linear-gradient(135deg, #2d4a8b 0%, #6a4c93 100%); 
+            color: white; 
+            padding: 14px 32px; 
+            border-radius: 10px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: all 0.3s ease; 
+            border: none; 
+            cursor: pointer; 
+            display: inline-block; 
+            text-align: center;
+            width: 100%;
+        }
+        .btn-primary:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 6px 20px rgba(45, 74, 139, 0.3); 
+        }
+        .btn-secondary { 
+            background: transparent; 
+            color: #e91e63; 
+            border: 1px solid #e91e63; 
+            padding: 12px 24px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            transition: all 0.3s ease; 
+            display: inline-block; 
+        }
+        .btn-secondary:hover { 
+            background: #e91e63; 
+            color: white; 
+            transform: translateY(-2px); 
+            box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3); 
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .cases-grid { grid-template-columns: 1fr; }
+            .hero-content { grid-template-columns: 1fr; gap: 40px; }
+            .hero-left { text-align: center; }
+            .hero-right { justify-content: center; }
+            .stat-item { align-items: center; }
+            .stat-label { text-align: center; }
+        }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2rem; }
+            .hero-subtitle { font-size: 1rem; }
+            .hero-stats, .demo-content { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) {
+            .results-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="hero-badge">🏆 Proven Results</div>
+                    <h1 class="hero-title">Real Success Stories: AI That Delivers Real Impact</h1>
+                    <h2 class="hero-subtitle">Discover how industry leaders like Nestlé and Kozma Clinic are achieving unprecedented efficiency and growth with PlugIA's AI solutions.</h2>
+                    <div class="hero-cta">
+                        <a href="#demo" class="btn-primary-hero">Become a Success Story</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-stats">
+                        <div class="stat-item"><div class="stat-number">+7.6%</div><div class="stat-label">Conversion Rate Lift</div></div>
+                        <div class="stat-item"><div class="stat-number">99.9%</div><div class="stat-label">Process Precision</div></div>
+                        <div class="stat-item"><div class="stat-number">200+</div><div class="stat-label">Companies Transformed</div></div>
+                        <div class="stat-item"><div class="stat-number">$25M+</div><div class="stat-label">Client Revenue Generated</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Featured Case Studies</h2>
+            <p class="section-description">Concrete challenges, intelligent solutions, and measurable results.</p>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-header">
+                        <div class="case-logo">🍫</div>
+                        <div class="case-company-info">
+                            <h3>Nestlé</h3>
+                            <p>Global CPG Leader</p>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <h4>The Challenge</h4>
+                        <p>Optimize the product mix across 250,000 points of sale to maximize sales potential and ensure the right products were in the right locations.</p>
+                        <h4>The Solution</h4>
+                        <p>We incorporated AI-powered product mix recommendations delivered directly to the sales team via WhatsApp, providing actionable insights at their fingertips.</p>
+                    </div>
+                    <div class="case-results">
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <div class="result-value">+7.6%</div>
+                                <div class="result-label">Conversion Rate</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-value">90%</div>
+                                <div class="result-label">Sales Team Satisfaction</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-header">
+                        <div class="case-logo">🏥</div>
+                        <div class="case-company-info">
+                            <h3>Kozma Clinic</h3>
+                            <p>Healthcare Provider</p>
+                        </div>
+                    </div>
+                    <div class="case-content">
+                        <h4>The Challenge</h4>
+                        <p>The financial closing process was a complex, manual task that took 21 days to complete, creating delays and consuming significant resources.</p>
+                        <h4>The Solution</h4>
+                        <p>Our AI was implemented to automate the financial reconciliation process, intelligently matching transactions and flagging exceptions for review.</p>
+                    </div>
+                    <div class="case-results">
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <div class="result-value">1 Day</div>
+                                <div class="result-label">Financial Closure</div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-value">99.9%</div>
+                                <div class="result-label">Reconciliation Precision</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="page-section demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2>Ready to Write Your Own Success Story?</h2>
+                    <p>Tell us about your challenge, and let's explore how PlugIA's AI can deliver measurable results for your business.</p>
+                    <a href="../pages/contact.html" class="btn-primary" style="width: auto;">Talk to an AI Expert</a>
+                </div>
+                <div class="demo-form">
+                    <h3>Schedule a Strategic Demo</h3>
+                    <form class="form">
+                        <div class="form-group"><input type="text" placeholder="Full Name" required></div>
+                        <div class="form-group"><input type="email" placeholder="Business Email" required></div>
+                        <div class="form-group"><input type="text" placeholder="Company" required></div>
+                        <div class="form-group"><textarea placeholder="What is your main business challenge?"></textarea></div>
+                        <button type="submit" class="btn-primary">Schedule Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="../assets/menu-fixed.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loadComponent = (url, containerId) => {
+                fetch(url)
+                    .then(response => response.ok ? response.text() : Promise.reject('Component not found'))
+                    .then(html => {
+                        document.getElementById(containerId).innerHTML = html;
+                        if (containerId === 'header-container' && typeof PlugIAMenu !== "undefined") {
+                            new PlugIAMenu();
+                        }
+                    })
+                    .catch(error => console.error(`Failed to load ${url}:`, error));
+            };
+            
+            loadComponent("../assets/header-premium.html", "header-container");
+            loadComponent("../assets/footer-premium.html", "footer-container");
+
+            const form = document.querySelector(".form");
+            if (form) {
+                form.addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    alert("Thank you! We will contact you within 15 minutes to schedule your demo.");
+                    form.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

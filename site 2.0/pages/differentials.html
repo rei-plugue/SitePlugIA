@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlugIA | AI That Delivers Real Business Results</title>
+    <meta name="description" content="PlugIA is the AI platform that unifies your scattered data from ERPs, CRMs, and WhatsApp to generate actionable insights that drive real revenue and efficiency.">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="../assets/styles-premium-v2.css" as="style">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles-premium-v2.css">
+    
+    <meta property="og:title" content="PlugIA | AI That Delivers Real Business Results">
+    <meta property="og:description" content="Stop analyzing data. Start generating revenue. Discover how 200+ companies are transforming their business with PlugIA.">
+    <meta property="og:image" content="https://plugia.com.br/img/logo_plugia_250_65_normal.png">
+
+    <style>
+        /* General Section Styling */
+        .page-section { padding: 80px 0; }
+        .bg-white { background-color: white; }
+        .bg-light { background-color: #f8fafc; }
+        .section-title { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; text-align: center; margin-bottom: 20px; }
+        .section-description { font-size: 1.25rem; color: #64748b; text-align: center; max-width: 800px; margin: 0 auto 60px; line-height: 1.6; }
+
+        /* Hero Section */
+        .hero-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 120px 0 80px; color: white; text-align: center; }
+        .hero-title { font-size: 3.5rem; font-weight: 800; margin-bottom: 16px; line-height: 1.2; }
+        .hero-title .gradient-text { background: linear-gradient(135deg, #f06292 0%, #e91e63 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-subtitle { font-size: 1.5rem; font-weight: 400; margin-bottom: 24px; opacity: 0.9; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.6;}
+        .hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 800; color: #e91e63; margin-bottom: 8px; }
+        .stat-label { font-size: 0.875rem; opacity: 0.7; }
+        .hero-cta { display: flex; gap: 16px; justify-content: center; }
+
+        /* Trusted By Section */
+        .trusted-by-section { padding: 40px 0; background-color: #f8fafc; }
+        .logos-grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4rem; }
+        .logos-grid img { max-height: 45px; opacity: 0.6; transition: opacity 0.3s ease; filter: grayscale(100%); }
+        .logos-grid img:hover { opacity: 1; filter: grayscale(0%); }
+
+        /* Story Section */
+        .story-section { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .story-section img { width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .story-text h2 { font-size: 2rem; color: #1a1a2e; margin-bottom: 24px; }
+        .story-text p { color: #64748b; margin-bottom: 16px; line-height: 1.7; }
+        
+        /* Approach (MVV) Section */
+        .approach-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .approach-card { background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px; }
+        .approach-card h3 { font-size: 1.5rem; font-weight: 600; color: #1a1a2e; margin-bottom: 16px; }
+        .approach-card p { color: #64748b; line-height: 1.6; }
+
+        /* Products Grid */
+        .products-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+        .product-card { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px; transition: all 0.3s ease; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .product-icon { font-size: 2rem; margin-bottom: 16px; }
+        .product-card h3 { font-size: 1.25rem; font-weight: 600; color: #1a1a2e; margin-bottom: 12px; }
+        .product-card p { color: #64748b; line-height: 1.6; margin-bottom: 20px; }
+        .product-card a { color: #e91e63; text-decoration: none; font-weight: 600; }
+
+        /* Featured Case Section */
+        .featured-case-card { background: white; border-radius: 16px; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; align-items: center; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+        .case-image { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 40px; text-align: center; color: white; height: 100%; display: flex; flex-direction: column; justify-content: center;}
+        .case-logo { font-size: 3rem; margin-bottom: 20px; }
+        .case-image h3 { font-size: 2rem; margin-bottom: 20px; }
+        .case-content { padding: 40px; }
+        .case-content h4 { font-size: 1.1rem; font-weight: 600; color: #1a1a2e; margin-bottom: 8px; }
+        .case-content p { color: #64748b; line-height: 1.7; font-size: 1.1rem; margin-bottom: 24px; }
+        .case-results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .case-result-item .value { font-size: 2rem; font-weight: 700; color: #e91e63; }
+        .case-result-item .label { color: #64748b; }
+
+        
+        /* Awards Section */
+        .awards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .award-card { background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px; text-align: center; }
+        .award-icon { font-size: 2.5rem; margin-bottom: 1rem; color: #e91e63; }
+        .award-title { font-size: 1.1rem; font-weight: 600; color: #1a1a2e; margin-bottom: 8px; }
+        .award-org { font-size: 0.9rem; color: #64748b; }
+
+        /* Demo Section */
+        .demo-section { background: #f8fafc; }
+        .demo-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .demo-text h2 { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; margin-bottom: 24px; }
+        .demo-text p { font-size: 1.25rem; color: #64748b; line-height: 1.6; }
+        .form { display: flex; flex-direction: column; gap: 20px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px 16px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem; }
+        .btn-primary { background: linear-gradient(135deg, #e91e63 0%, #f06292 100%); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; border: none; cursor: pointer; display: inline-block; text-align: center;}
+        .btn-secondary { background: transparent; color: #e91e63; border: 1px solid #e91e63; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .approach-grid, .products-grid, .awards-grid { grid-template-columns: 1fr 1fr; }
+            .featured-case-card { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.8rem; }
+            .hero-subtitle { font-size: 1.2rem; }
+            .hero-stats, .story-section, .approach-grid, .products-grid, .awards-grid, .demo-content { grid-template-columns: 1fr; }
+            .story-section img { order: -1; margin-bottom: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 style="color: white;" class="hero-title">Stop Analyzing Data. <span class="gradient-text">Start Generating Revenue.</span></h1>
+                <h2 style="color: #e91e63;" class="hero-subtitle">PlugIA is the AI platform that unifies your scattered data from ERPs, CRMs, and WhatsApp, transforming it into actionable insights that drive real business growth.</h2>
+                <div class="hero-stats">
+                    <div class="stat-item"><div class="stat-number">200+</div><div class="stat-label">Companies Transformed</div></div>
+                    <div class="stat-item"><div class="stat-number">$25M+</div><div class="stat-label">Client Revenue Generated</div></div>
+                    <div class="stat-item"><div class="stat-number">98.7%</div><div class="stat-label">Client Satisfaction</div></div>
+                    <div class="stat-item"><div class="stat-number">24h</div><div class="stat-label">Average Setup</div></div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#demo" class="btn-primary">Schedule a Demo</a>
+                    <a href="cases.html" class="btn-secondary">See Success Stories</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trusted-by-section">
+        <div class="container">
+            <div class="logos-grid">
+                <img src="../img/Nestle-Logo-650x366.png" alt="Logo Nestlé">
+                <img src="../img/logo-uau_2025.webp" alt="Logo UAU Ingleza">
+                <img src="../img/mcdonalds-90.png" alt="Logo McDonald's">
+                <img src="../img/PG_logo_dark_blue-thumb-big.png" alt="Logo P&G">
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="page-section bg-white">
+        <div class="container">
+            <div class="story-section">
+                <div class="story-text">
+                    <h2>Our Story: Why We Exist</h2>
+                    <p>Founded by tech veterans who saw countless AI projects fail, PlugIA was created to solve the root cause: disconnected, low-quality data. We focus on the fundamental data layer, building a platform that connects, refines, and prepares your data so AI can finally deliver on its promise.</p>
+                </div>
+                <div class="story-image">
+                    <img src="../img/de_img1.png" style="width: 80%; aspect-ratio: 16 / 9; object-fit: cover;"" alt="PlugIA team in a strategic meeting">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Our Approach: From Data Chaos to Business Clarity</h2>
+            <p class="section-description">We believe in a simple, powerful, three-step approach to making AI work.</p>
+            <div class="approach-grid">
+                <div class="approach-card">
+                    <h3>1. Unify All Data</h3>
+                    <p>We connect seamlessly to all your systems—ERP, CRM, WhatsApp, spreadsheets—to create a single, reliable source of truth without complex, months-long integration projects.</p>
+                </div>
+                <div class="approach-card">
+                    <h3>2. Generate Actionable Insights</h3>
+                    <p>Our AI analyzes your unified data to uncover hidden opportunities, predict customer behavior, identify risks, and find efficiencies you never knew existed.</p>
+                </div>
+                <div class="approach-card">
+                    <h3>3. Drive Measurable ROI</h3>
+                    <p>We deliver clear, prioritized recommendations and automate workflows, ensuring that insights translate directly into measurable business results, from increased sales to reduced costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="page-section bg-white">
+        <div class="container">
+            <h2 class="section-title">Our Core Products</h2>
+            <p class="section-description">A suite of powerful AI solutions designed to solve your most critical business challenges.</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">🚀</div>
+                    <h3>PlugIA Platform</h3>
+                    <p>The complete platform to unify all your data, generate insights, and automate decisions across your entire organization.</p>
+                    <a href="platform.html">Learn More →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">📊</div>
+                    <h3>Insight Builder</h3>
+                    <p>Connect ERP, CRM, and WhatsApp to generate real-time BI and sales insights with unparalleled accuracy.</p>
+                    <a href="insight-builder.html">Learn More →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🔥</div>
+                    <h3>Fenix AI</h3>
+                    <p>Automate your complex spreadsheets and manual processes, eliminating errors and saving thousands of work hours.</p>
+                    <a href="fenix-ia.html">Learn More →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">📄</div>
+                    <h3>ThinkDoc</h3>
+                    <p>Intelligent document validation to streamline HR onboarding, contract analysis, and compliance workflows.</p>
+                    <a href="thinkdoc.html">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Proven Results for Industry Leaders</h2>
+            <p class="section-description">We deliver real, measurable impact, not just promises.</p>
+            <div class="featured-case-card">
+                <div class="case-image">
+                    <div class="case-logo">🍫</div>
+                    <h3 style="color: white;">Nestlé</h3>
+                    <p>Global CPG Leader</p>
+                </div>
+                <div class="case-content">
+                    <h4>Challenge:</h4>
+                    <p>Optimize the product mix across 250,000 points of sale to maximize revenue.</p>
+                    <h4>Solution:</h4>
+                    <p>AI-powered recommendations were delivered directly to the sales team's WhatsApp, guiding them on the best product mix for each specific location.</p>
+                    <div class="case-results-grid">
+                        <div class="case-result-item">
+                            <div class="value">+7.6%</div>
+                            <div class="label">Conversion Rate</div>
+                        </div>
+                        <div class="case-result-item">
+                            <div class="value">90%</div>
+                            <div class="label">Sales Team Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-white">
+        <div class="container">
+            <h2 class="section-title">Recognized for Innovation and Excellence</h2>
+            <div class="awards-grid">
+                <div class="award-card"><div class="award-icon">🏆</div><h3 class="award-title">2nd Place at InovaTech</h3><p class="award-org">Nova Lima Municipality Acceleration Program</p></div>
+                <div class="award-card"><div class="award-icon">⭐</div><h3 class="award-title">Selected by Sebrae Minas</h3><p class="award-org">Mission Gitex 2025 Dubai<BR>Only 10 startups from Minas Gerais were selectet</p></div>
+                <div class="award-card"><div class="award-icon">🚀</div><h3 class="award-title">Chosen by ApexBrasil</h3><p class="award-org">Only 50 startups from Brazil were selected<BR>Expand North Star 2025</p></div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="page-section demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2>Ready to See Real Results?</h2>
+                    <p>Schedule a personalized demo and let us show you how PlugIA can transform your data into your most valuable asset.</p>
+                </div>
+                <div class="demo-form">
+                    <h3>Schedule a Strategic Demo</h3>
+                    <form class="form">
+                        <div class="form-group"><input type="text" placeholder="Full Name" required></div>
+                        <div class="form-group"><input type="email" placeholder="Business Email" required></div>
+                        <div class="form-group"><input type="text" placeholder="Company" required></div>
+                        <div class="form-group"><textarea placeholder="What is your main data challenge today?"></textarea></div>
+                        <button type="submit" class="btn-primary">Schedule Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="../assets/menu-fixed.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loadComponent = (url, containerId) => {
+                fetch(url)
+                    .then(response => response.ok ? response.text() : Promise.reject('Component not found'))
+                    .then(html => {
+                        document.getElementById(containerId).innerHTML = html;
+                        if (containerId === 'header-container' && typeof PlugIAMenu !== "undefined") {
+                            new PlugIAMenu();
+                        }
+                    })
+                    .catch(error => console.error(`Failed to load ${url}:`, error));
+            };
+            
+            loadComponent("../assets/header-premium.html", "header-container");
+            loadComponent("../assets/footer-premium.html", "footer-container");
+
+            const form = document.querySelector(".form");
+            if (form) {
+                form.addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    alert("Thank you! We will contact you within 15 minutes to schedule your demo.");
+                    form.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

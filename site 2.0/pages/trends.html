@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trends 2025: A PlugIA Report for GITEX & Expand North Star</title>
+    <meta name="description" content="PlugIA's exclusive analysis of the top enterprise AI trends for 2025, presented for GITEX. Discover how Generative AI, Autonomous Agents, and Multimodal AI are moving from hype to ROI.">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="../assets/styles-premium-v2.css" as="style">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles-premium-v2.css">
+    
+    <meta property="og:title" content="AI Trends 2025: A PlugIA Report for GITEX & Expand North Star">
+    <meta property="og:description" content="Discover the key enterprise AI trends moving from hype to ROI in 2025.">
+    <meta property="og:image" content="https://plugia.com.br/img/logo_plugia_250_65_normal.png">
+
+    <style>
+        /* General Section Styling */
+        .page-section { padding: 80px 0; }
+        .bg-white { background-color: white; }
+        .bg-light { background-color: #f8fafc; }
+        .section-title { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; text-align: center; margin-bottom: 20px; }
+        .section-description { font-size: 1.25rem; color: #64748b; text-align: center; max-width: 800px; margin: 0 auto 60px; line-height: 1.6; }
+
+        /* Hero Section */
+        .hero-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 120px 0 80px; color: white; text-align: center; }
+        .hero-badge { display: inline-block; background: rgba(233, 30, 99, 0.1); border: 1px solid #e91e63; color: #e91e63; padding: 8px 16px; border-radius: 20px; font-size: 0.875rem; font-weight: 600; margin-bottom: 20px; }
+        .hero-title { font-size: 3.5rem; font-weight: 800; margin-bottom: 16px; line-height: 1.2; }
+        .hero-title .gradient-text { background: linear-gradient(135deg, #f06292 0%, #e91e63 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-subtitle { font-size: 1.5rem; font-weight: 400; margin-bottom: 24px; opacity: 0.9; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.6;}
+        .hero-cta { display: flex; gap: 16px; justify-content: center; }
+
+        /* Market Overview */
+        .market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .market-card { background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px; }
+        .market-card h3 { font-size: 1.5rem; color: #1a1a2e; margin-bottom: 24px; text-align: center; }
+        .market-stat { text-align: center; margin-bottom: 20px; }
+        .market-stat .value { font-size: 2.5rem; font-weight: 700; color: #e91e63; }
+        .market-stat .label { font-size: 1rem; color: #64748b; }
+        .market-stat .growth { font-size: 1rem; font-weight: 600; color: #10b981; }
+
+        /* Trends Section */
+        .trends-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .trend-card { background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px; transition: all 0.3s ease; }
+        .trend-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .trend-header { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 16px; }
+        .trend-icon { font-size: 2rem; }
+        .trend-card h3 { font-size: 1.25rem; font-weight: 600; color: #1a1a2e; margin: 0; }
+        .trend-card .subtitle { font-size: 0.9rem; color: #64748b; }
+        .trend-card .perspective { background-color: #f8fafc; border-left: 4px solid #e91e63; padding: 16px; margin-top: 16px; border-radius: 8px; }
+        .perspective h4 { font-size: 1rem; font-weight: 600; color: #1a1a2e; margin: 0 0 8px; }
+        .perspective p { font-size: 0.95rem; color: #64748b; line-height: 1.6; margin: 0; }
+        
+        /* GITEX Section */
+        .gitex-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; }
+        .gitex-content { max-width: 800px; margin: 0 auto; text-align: center; }
+
+        /* Demo/Meeting Form */
+        .demo-section { background: #f8fafc; }
+        .demo-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .demo-text h2 { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; margin-bottom: 24px; }
+        .demo-text p { font-size: 1.25rem; color: #64748b; line-height: 1.6; }
+        .form { display: flex; flex-direction: column; gap: 20px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px 16px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem; }
+        .checkbox-group { display: flex; align-items: center; gap: 10px; }
+        .btn-primary { background: linear-gradient(135deg, #e91e63 0%, #f06292 100%); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; border: none; cursor: pointer; display: inline-block; text-align: center;}
+        .btn-secondary { background: transparent; color: #e91e63; border: 1px solid #e91e63; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .market-grid, .trends-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.8rem; }
+            .hero-subtitle { font-size: 1.2rem; }
+            .market-grid, .trends-grid, .demo-content { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">🔮 PlugIA Exclusive Report for GITEX 2025</div>
+                <h1 style="color: white;" class="hero-title">AI Trends 2025: <span class="gradient-text">From Hype to ROI</span></h1>
+                <h2 style="color: #e91e63;" class="hero-subtitle">As we prepare for Expand North Star at GITEX, we present our analysis of the key AI trends moving from experimental tech to essential business drivers. Discover the future of enterprise AI.</h2>
+                <div class="hero-cta">
+                    <a href="#trends" class="btn-primary">Explore the Trends</a>
+                    <a href="#gitex-meeting" class="btn-secondary">Book a Meeting at GITEX</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-light">
+        <div class="container">
+            <h2 class="section-title">The Global AI Market in 2025</h2>
+            <p class="section-description">The AI landscape is experiencing explosive growth, creating unprecedented opportunities for businesses ready to innovate.</p>
+            <div class="market-grid">
+                <div class="market-card">
+                    <h3>🌍 Global Market</h3>
+                    <div class="market-stat"><div class="value">$1.8 Trillion</div><div class="label">Projected Market Value</div><div class="growth">(+127% YoY)</div></div>
+                </div>
+                <div class="market-card">
+                    <h3>🇧🇷 Brazil/LATAM Market</h3>
+                    <div class="market-stat"><div class="value">$17 Billion</div><div class="label">Projected Market Value</div><div class="growth">(+89% YoY)</div></div>
+                </div>
+                <div class="market-card">
+                    <h3>📈 Enterprise Adoption</h3>
+                    <div class="market-stat"><div class="value">45%</div><div class="label">of Global Companies Using AI</div><div class="growth">(Up from 25% in 2023)</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trends" class="page-section bg-white">
+        <div class="container">
+            <h2 class="section-title">Top 6 Enterprise AI Trends for 2025</h2>
+            <p class="section-description">These are the key trends we believe will deliver the most significant business impact and ROI in the coming year.</p>
+            <div class="trends-grid">
+                <div class="trend-card">
+                    <div class="trend-header"><div class="trend-icon">✨</div><h3>1. Generative AI as a Core Business Tool</h3></div>
+                    <p class="subtitle">Moving beyond novelty, GenAI is becoming integral for automating reports, personalizing marketing, and generating code.</p>
+                    <div class="perspective"><h4>The PlugIA Perspective:</h4><p>We leverage Generative AI in our Insight Builder to automatically create executive summaries from complex dashboards, turning data into clear narratives.</p></div>
+                </div>
+                <div class="trend-card">
+                    <div class="trend-header"><div class="trend-icon">🤖</div><h3>2. Autonomous Agents for Business Processes</h3></div>
+                    <p class="subtitle">AI agents will independently manage complex workflows, from qualifying sales leads to optimizing supply chain logistics.</p>
+                    <div class="perspective"><h4>The PlugIA Perspective:</h4><p>Our Fenix AI product acts as an autonomous agent to replace manual spreadsheets, validating data and automating entire financial closing processes.</p></div>
+                </div>
+                <div class="trend-card">
+                    <div class="trend-header"><div class="trend-icon">🎭</div><h3>3. Multimodal AI: Unifying Unstructured Data</h3></div>
+                    <p class="subtitle">AI that understands and processes text, images, and voice simultaneously will unlock insights from unstructured data sources like documents and chats.</p>
+                    <div class="perspective"><h4>The PlugIA Perspective:</h4><p>ThinkDoc uses Multimodal AI to read and validate various document types, while our core platform analyzes text from WhatsApp chats and emails.</p></div>
+                </div>
+                <div class="trend-card">
+                    <div class="trend-header"><div class="trend-icon">📈</div><h3>4. From Predictive to Prescriptive Analytics</h3></div>
+                    <p class="subtitle">AI will not only forecast what will happen but will also recommend the best course of action to achieve specific business goals.</p>
+                    <div class="perspective"><h4>The PlugIA Perspective:</h4><p>Our platform provides prescriptive insights, such as recommending the optimal product mix for a sales team to maximize conversion rates.</p></div>
+                </div>
+                <div class="trend-card">
+                    <div class="trend-header"><div class="trend-icon">🎯</div><h3>5. Hyper-Personalization at Scale</h3></div>
+                    <p class="subtitle">Leveraging unified data to deliver truly individual experiences for each customer, dramatically increasing engagement and loyalty.</p>
+                    <div class="perspective"><h4>The PlugIA Perspective:</h4><p>By connecting CRM and sales data, Insight Builder allows companies to identify and act on hyper-personalization opportunities automatically.</p></div>
+                </div>
+                <div class="trend-card">
+                    <div class="trend-header"><div class="trend-icon">⚙️</div><h3>6. AI for Radical Efficiency</h3></div>
+                    <p class="subtitle">The ultimate trend is using all AI technologies to achieve massive operational efficiency, reduce costs, and free up human talent for strategic tasks.</p>
+                    <div class="perspective"><h4>The PlugIA Perspective:</h4><p>This is our core mission. Every PlugIA product is designed to automate complex processes and deliver measurable efficiency gains, generating clear ROI.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section gitex-section">
+        <div class="container">
+            <div class="gitex-content">
+                <h2 style="color: #e91e63;" class="section-title">Our Vision for Expand North Star at GITEX</h2>
+                <p class="section-description" style="color: #e2e8f0;">At PlugIA, we don't just follow trends—we build the tools that make them accessible and profitable. Our vision is to empower businesses across the globe to move beyond experimental AI and embed data-driven intelligence into the core of their operations. We are coming to GITEX to find partners and clients who share this vision and are ready to build the future of enterprise AI with us.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gitex-meeting" class="page-section demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2>Connect With Us at GITEX 2025</h2>
+                    <p>Will you be at Expand North Star in Dubai? Schedule a one-on-one meeting with our leadership team to discuss how these trends can be applied to your business. Let's explore partnership opportunities and see a live demo of our platform.</p>
+                </div>
+                <div class="demo-form">
+                    <h3>Book Your Meeting</h3>
+                    <form class="form">
+                        <div class="form-group"><input type="text" placeholder="Full Name" required></div>
+                        <div class="form-group"><input type="email" placeholder="Business Email" required></div>
+                        <div class="form-group"><input type="text" placeholder="Company" required></div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="at-gitex" name="at-gitex">
+                            <label for="at-gitex">I will be at GITEX and would like to schedule a meeting.</label>
+                        </div>
+                        <button type="submit" class="btn-primary">Request Meeting</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="../assets/menu-fixed.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loadComponent = (url, containerId) => {
+                fetch(url)
+                    .then(response => response.ok ? response.text() : Promise.reject('Component not found'))
+                    .then(html => {
+                        document.getElementById(containerId).innerHTML = html;
+                        if (containerId === 'header-container' && typeof PlugIAMenu !== "undefined") {
+                            new PlugIAMenu();
+                        }
+                    })
+                    .catch(error => console.error(`Failed to load ${url}:`, error));
+            };
+            
+            loadComponent("../assets/header-premium.html", "header-container");
+            loadComponent("../assets/footer-premium.html", "footer-container");
+
+            const form = document.querySelector(".form");
+            if (form) {
+                form.addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    alert("Thank you for your interest! We will contact you shortly to confirm your meeting.");
+                    form.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

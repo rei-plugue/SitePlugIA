@@ -1,0 +1,120 @@
+/* ===== FOOTER COMPATIBILITY - LAYOUT HORIZONTAL ===== */
+
+/* Compatibilidade com classes existentes */
+.contact-item-compact {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-item-compact:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.contact-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #EC4899, #F472B6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.contact-details-compact {
+    flex: 1;
+}
+
+.contact-label-small {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+    display: block;
+}
+
+.contact-details-compact a,
+.contact-details-compact span {
+    font-size: 0.875rem;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details-compact a:hover {
+    color: #F472B6;
+}
+
+/* WhatsApp especial */
+.whatsapp-link-compact {
+    background: linear-gradient(135deg, #25D366, #128C7E) !important;
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+
+.whatsapp-link-compact:hover {
+    background: linear-gradient(135deg, #128C7E, #25D366) !important;
+    transform: translateY(-1px);
+    color: white !important;
+}
+
+/* Grid layout para footer-contact-grid */
+.footer-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .contact-item-compact {
+        padding: 0.5rem;
+    }
+}
+
+/* Título da seção */
+.footer-contact h4 {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+}
+/* Torna os itens de contato horizontais */
+.contact-info {
+  display: flex;          /* Ativa o layout flexível (horizontal por padrão) */
+  flex-wrap: wrap;        /* Permite que os itens quebrem para a linha de baixo em telas pequenas */
+  gap: 15px;              /* Adiciona um espaço entre os cartões de contato */
+  justify-content: start; /* Alinha os itens ao início */
+}
+
+/* Garante que cada item não fique muito espremido */
+.contact-item {
+   flex-grow: 1; /* Permite que os itens cresçam para ocupar o espaço */
+   min-width: 220px; /* Define uma largura mínima para cada cartão */
+}

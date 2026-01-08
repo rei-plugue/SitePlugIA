@@ -1,0 +1,353 @@
+/* Footer Compacto e Moderno - PlugIA */
+
+.footer-compact {
+    background: linear-gradient(135deg, #1A365D 0%, #2D3748 100%);
+    color: white;
+    padding: 3rem 0 1.5rem;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: start;
+}
+
+/* Seção da Marca */
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-logo .logo-img {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 1rem;
+    filter: brightness(1.1);
+}
+
+.footer-tagline {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: var(--primary-pink);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Colunas de Links */
+.footer-links {
+    display: contents;
+}
+
+.footer-column h4 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-column h4::after {
+    content: '';
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: var(--primary-pink);
+}
+
+.footer-column a {
+    display: block;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+    padding: 0.25rem 0;
+}
+
+.footer-column a:hover {
+    color: var(--secondary-pink);
+    transform: translateX(3px);
+}
+
+/* Seção de Contato */
+.footer-contact h4 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-contact h4::after {
+    content: '';
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: var(--primary-pink);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.contact-icon {
+    font-size: 1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-item a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: var(--secondary-pink);
+}
+
+.whatsapp-cta {
+    background: #25D366 !important;
+    color: white !important;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-cta:hover {
+    background: #128C7E !important;
+    transform: translateY(-1px);
+}
+
+/* Divisor */
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    margin: 1.5rem 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-legal span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+}
+
+.legal-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.legal-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.legal-links a:hover {
+    color: var(--secondary-pink);
+}
+
+.footer-badges {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .footer-main {
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+    
+    .footer-contact {
+        grid-column: 1 / -1;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .footer-contact .contact-item {
+        display: inline-flex;
+        margin-right: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-compact {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .footer-brand {
+        max-width: none;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    .footer-column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-contact h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-contact .contact-item {
+        justify-content: center;
+        margin-right: 0;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .footer-badges {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-main {
+        gap: 1rem;
+    }
+    
+    .footer-column a {
+        font-size: 0.85rem;
+    }
+    
+    .contact-item {
+        font-size: 0.85rem;
+    }
+    
+    .legal-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* Animações suaves */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-compact {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Estados de hover melhorados */
+.footer-column a,
+.contact-item a,
+.legal-links a {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-column a::before,
+.contact-item a::before,
+.legal-links a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 1px;
+    background: var(--primary-pink);
+    transition: left 0.3s ease;
+}
+
+.footer-column a:hover::before,
+.contact-item a:hover::before,
+.legal-links a:hover::before {
+    left: 0;
+}

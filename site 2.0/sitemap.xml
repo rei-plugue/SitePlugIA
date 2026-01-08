@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <!-- Homepage -->
+    <url>
+        <loc>https://plugia.com.br/</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="pt-br" href="https://plugia.com.br/" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://plugia.com.br/?lang=en" />
+    </url>
+    
+    <!-- Main Pages -->
+    <url>
+        <loc>https://plugia.com.br/solutions.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="pt-br" href="https://plugia.com.br/solutions.html" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://plugia.com.br/solutions.html?lang=en" />
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/differentials.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="pt-br" href="https://plugia.com.br/differentials.html" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://plugia.com.br/differentials.html?lang=en" />
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/methodology.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="pt-br" href="https://plugia.com.br/methodology.html" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://plugia.com.br/methodology.html?lang=en" />
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/partnerships.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="pt-br" href="https://plugia.com.br/partnerships.html" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://plugia.com.br/partnerships.html?lang=en" />
+    </url>
+    
+    <!-- Support Pages -->
+    <url>
+        <loc>https://plugia.com.br/faq.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="pt-br" href="https://plugia.com.br/faq.html" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://plugia.com.br/faq.html?lang=en" />
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/trends.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="pt-br" href="https://plugia.com.br/trends.html" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://plugia.com.br/trends.html?lang=en" />
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/contact.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="pt-br" href="https://plugia.com.br/contact.html" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://plugia.com.br/contact.html?lang=en" />
+    </url>
+    
+    <!-- Legacy Pages -->
+    <url>
+        <loc>https://plugia.com.br/platform.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/cases.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/company.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/price.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Product Pages -->
+    <url>
+        <loc>https://plugia.com.br/thinkdoc.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/thinkdoc-gov.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/fenix-ia.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/gpt-guru.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/insight-builder.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/orbitjob.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Utility Pages -->
+    <url>
+        <loc>https://plugia.com.br/optimize-images.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/performance-test.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Legal Pages -->
+    <url>
+        <loc>https://plugia.com.br/privacy.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="pt-br" href="https://plugia.com.br/privacy.html" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://plugia.com.br/privacy.html?lang=en" />
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/terms.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="pt-br" href="https://plugia.com.br/terms.html" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://plugia.com.br/terms.html?lang=en" />
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/cookies.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+        <xhtml:link rel="alternate" hreflang="pt-br" href="https://plugia.com.br/cookies.html" />
+        <xhtml:link rel="alternate" hreflang="en-us" href="https://plugia.com.br/cookies.html?lang=en" />
+    </url>
+    
+    <!-- Legacy Anchors -->
+    <url>
+        <loc>https://plugia.com.br/#strategic</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://plugia.com.br/#faq</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset>

@@ -1,0 +1,290 @@
+/* ===== MELHORIAS DE CONTRASTE UX/UI ===== */
+
+/* Expand North Banner */
+.expand-north-banner {
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Melhorias de Contraste - Textos */
+.hero-title {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 800;
+}
+
+.hero-description {
+    color: rgba(255, 255, 255, 0.95) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+}
+
+/* Métricas com melhor contraste */
+.hero-metrics .metric-value {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    font-weight: 800;
+}
+
+.hero-metrics .metric-label {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+}
+
+/* Botões com melhor contraste */
+.btn-primary {
+    background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 
+        0 8px 25px rgba(233, 30, 99, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #c2185b 0%, #880e4f 100%) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 
+        0 12px 35px rgba(233, 30, 99, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+.btn-outline {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border: 2px solid rgba(255, 255, 255, 0.3) !important;
+    font-weight: 600 !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Cards com melhor contraste */
+.card {
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.05),
+        0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card h3 {
+    color: #1a1a2e !important;
+    font-weight: 700 !important;
+}
+
+.card p {
+    color: #4a5568 !important;
+    font-weight: 500 !important;
+    line-height: 1.6 !important;
+}
+
+/* Seções com fundo escuro - melhor contraste */
+.section-dark {
+    background: linear-gradient(135deg, #1a1a2e 0%, #2d4a8b 100%) !important;
+}
+
+.section-dark h2 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    font-weight: 800 !important;
+}
+
+.section-dark p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+    font-weight: 500 !important;
+}
+
+/* Trust logos com melhor apresentação */
+.trust-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.trust-logo {
+    height: 60px;
+    width: auto;
+    max-width: 120px;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.7);
+    transition: all 0.3s ease;
+    background: #ffffff;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trust-logo:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Métricas de resultados */
+.results-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.metric-card {
+    background: rgba(255, 255, 255, 0.95) !important;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.metric-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #e91e63 !important;
+    margin-bottom: 0.5rem;
+    text-shadow: none !important;
+}
+
+.metric-description {
+    color: #1a1a2e !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem;
+}
+
+/* Formulários com melhor contraste */
+.form-group label {
+    color: #1a1a2e !important;
+    font-weight: 600 !important;
+    margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    border: 2px solid #e2e8f0 !important;
+    background: #ffffff !important;
+    color: #1a1a2e !important;
+    font-weight: 500 !important;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: #2d4a8b !important;
+    box-shadow: 0 0 0 3px rgba(45, 74, 139, 0.1) !important;
+    outline: none !important;
+}
+
+/* Navegação com melhor contraste */
+.nav-link {
+    color: #1a1a2e !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+
+.nav-link:hover {
+    color: #e91e63 !important;
+}
+
+/* Footer com melhor legibilidade */
+.footer-section h3 {
+    color: #1a1a2e !important;
+    font-weight: 700 !important;
+}
+
+.footer-section a {
+    color: #4a5568 !important;
+    font-weight: 500 !important;
+}
+
+.footer-section a:hover {
+    color: #e91e63 !important;
+}
+
+/* Responsividade do banner */
+@media (max-width: 768px) {
+    .expand-north-banner {
+        margin-bottom: 1.5rem;
+    }
+    
+    .banner-image {
+        max-width: 100%;
+    }
+    
+    .trust-logos {
+        gap: 1rem;
+    }
+    
+    .trust-logo {
+        height: 40px;
+        max-width: 80px;
+    }
+    
+    .results-metrics {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+    
+    .metric-card {
+        padding: 1.5rem;
+    }
+    
+    .metric-number {
+        font-size: 2rem;
+    }
+}
+
+/* Acessibilidade - Alto contraste */
+@media (prefers-contrast: high) {
+    .hero-title,
+    .hero-description {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8) !important;
+    }
+    
+    .btn-primary {
+        border: 3px solid #ffffff !important;
+    }
+    
+    .card {
+        border: 2px solid #1a1a2e !important;
+    }
+}
+
+/* Modo escuro */
+@media (prefers-color-scheme: dark) {
+    .card {
+        background: #2d3748 !important;
+        border-color: #4a5568 !important;
+    }
+    
+    .card h3 {
+        color: #ffffff !important;
+    }
+    
+    .card p {
+        color: #e2e8f0 !important;
+    }
+}

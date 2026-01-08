@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight Builder | Connect ERP, CRM, and WhatsApp with Advanced AI | PlugIA</title>
+    <meta name="description" content="Insight Builder connects ERP, CRM, WhatsApp and generates actionable insights with 93% accuracy. Increase sales by 7x and set up in 2 hours. Transform data into intelligent decisions.">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="../assets/styles-premium-v2.css" as="style">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles-premium-v2.css">
+    
+    <meta property="og:title" content="Insight Builder | Connect ERP, CRM, and WhatsApp with Advanced AI">
+    <meta property="og:description" content="Unify data from any system and generate actionable insights with 93% accuracy. Set up in 2 hours and increase sales by 7x.">
+    <meta property="og:image" content="https://plugia.com.br/img/logo_plugia_250_65_normal.png">
+
+    <style>
+        /* General Section Styling from Template */
+        .page-section { padding: 80px 0; }
+        .bg-white { background-color: white; }
+        .bg-light { background-color: #f8fafc; }
+        
+        .section-title { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; text-align: center; margin-bottom: 20px; }
+        .section-description { font-size: 1.25rem; color: #64748b; text-align: center; max-width: 800px; margin: 0 auto 60px; line-height: 1.6; }
+
+        /* Hero Section from Template */
+        .hero-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 120px 0 80px; color: white; text-align: center; }
+        .hero-badge { display: inline-block; background: #e91e63; color: white; padding: 8px 16px; border-radius: 20px; font-size: 0.875rem; font-weight: 600; margin-bottom: 20px; }
+        .hero-title { font-size: 3rem; font-weight: 800; margin-bottom: 16px; }
+        .hero-subtitle { font-size: 1.5rem; font-weight: 600; margin-bottom: 24px; opacity: 0.9; max-width: 900px; margin-left: auto; margin-right: auto;}
+        .hero-description { font-size: 1.25rem; margin-bottom: 40px; opacity: 0.8; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 800; color: #e91e63; margin-bottom: 8px; }
+        .stat-label { font-size: 0.875rem; opacity: 0.7; }
+        .hero-cta { display: flex; gap: 16px; justify-content: center; }
+
+        /* Features Section - Tab Styling Adapted for Template */
+        .tabs-navigation { display: flex; justify-content: center; gap: 16px; margin-bottom: 40px; border-bottom: 1px solid #e2e8f0; }
+        .tab-button { background: transparent; border: none; padding: 16px 24px; font-size: 1rem; font-weight: 600; color: #64748b; cursor: pointer; transition: all 0.3s ease; position: relative; border-bottom: 3px solid transparent; }
+        .tab-button.active { color: #e91e63; border-bottom-color: #e91e63; }
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
+        .feature-showcase { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .feature-details h3 { font-size: 1.75rem; color: #1a1a2e; margin-bottom: 16px; }
+        .feature-details p { color: #64748b; margin-bottom: 24px; line-height: 1.6; }
+        .feature-benefits .benefit-item { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; }
+        .benefit-icon { font-size: 1.5rem; }
+        .benefit-content h4 { font-size: 1rem; font-weight: 600; color: #334155; margin: 0 0 4px; }
+        .benefit-content p { font-size: 0.9rem; color: #64748b; margin: 0; line-height: 1.5; }
+        
+        /* Tutorial Section Styling Adapted for Template */
+        .tutorial-section { background-color: #f8fafc; text-align: center; }
+        .tutorial-header { display: inline-flex; align-items: center; gap: 16px; background: white; padding: 16px 24px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); margin-bottom: 40px; }
+        .tutorial-icon { font-size: 2rem; }
+        .tutorial-text h3 { margin: 0; color: #1a1a2e; }
+        .tutorial-text p { margin: 0; color: #64748b; }
+        .tutorial-steps { display: flex; justify-content: center; gap: 20px; }
+        .tutorial-step { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; flex: 1; max-width: 220px; cursor: pointer; transition: all 0.3s ease; border-bottom: 4px solid #e2e8f0; }
+        .tutorial-step:hover, .tutorial-step.active { transform: translateY(-5px); border-color: #e91e63; box-shadow: 0 10px 20px rgba(233, 30, 99, 0.1); border-bottom-color: #e91e63; }
+        .step-number { font-size: 1.25rem; font-weight: 700; color: #e91e63; margin-bottom: 16px; width: 40px; height: 40px; line-height: 40px; border-radius: 50%; background: #fce4ec; margin-left: auto; margin-right: auto; }
+        .step-content h4 { margin: 0 0 8px; color: #1a1a2e; }
+        .step-content p { margin: 0 0 12px; font-size: 0.9rem; color: #64748b; }
+        .step-duration { font-size: 0.8rem; font-weight: 600; color: #e91e63; }
+
+        /* Testimonials Section from Template */
+        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .testimonial-card { background: white; border-radius: 16px; padding: 32px; box-shadow: 0 5px 20px rgba(0,0,0,0.07); }
+        .testimonial-quote { font-style: italic; color: #334155; margin-bottom: 24px; line-height: 1.6; position: relative; padding-left: 20px; }
+        .testimonial-quote::before { content: '“'; font-size: 2rem; color: #e91e63; position: absolute; left: -10px; top: -10px; }
+        .testimonial-author { text-align: right; }
+        .author-name { font-weight: 600; color: #1a1a2e; }
+        .author-title { font-size: 0.875rem; color: #64748b; }
+
+        /* Demo Section from Template */
+        .demo-section { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .demo-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .demo-text h2 { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; margin-bottom: 24px; }
+        .demo-text p { font-size: 1.25rem; color: #64748b; margin-bottom: 32px; line-height: 1.6; }
+        .demo-benefits { margin-bottom: 32px; }
+        .benefit { color: #64748b; margin-bottom: 12px; }
+        .demo-note { display: flex; gap: 20px; margin-top: 16px; font-size: 0.875rem; color: #64748b; }
+        .demo-form { background: white; border-radius: 20px; padding: 40px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); }
+        .demo-form h3 { font-size: 1.5rem; font-weight: 700; color: #1a1a2e; margin-bottom: 32px; text-align: center; }
+        .form { display: flex; flex-direction: column; gap: 20px; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 16px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem; transition: border-color 0.3s ease; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #e91e63; box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.2); }
+        .form-group textarea { resize: vertical; min-height: 100px; }
+        .btn-primary { background: linear-gradient(135deg, #e91e63 0%, #f06292 100%); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; border: none; cursor: pointer; display: inline-block; text-align: center;}
+        .btn-primary:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3); }
+        .btn-secondary { background: transparent; color: #e91e63; border: 1px solid #e91e63; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; display: inline-block; }
+        .btn-secondary:hover { background: #e91e63; color: white; transform: translateY(-2px); box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3); }
+
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .hero-stats, .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+            .demo-content, .feature-showcase { grid-template-columns: 1fr; }
+            .tutorial-steps { flex-direction: column; align-items: center; }
+        }
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.5rem; }
+            .hero-subtitle { font-size: 1.2rem; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .tabs-navigation { flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div  class="hero-badge">🔗 Universal Connectivity with AI</div>
+                <h1 style="color: white;" class="hero-title">Connect ERP, CRM, and WhatsApp in a Single Platform</h1>
+                <h2 style="color: white;" class="hero-subtitle">
+                    Insight Builder unifies data from <strong>any system</strong> and generates actionable insights 
+                    with <strong>93% accuracy</strong>. Set up in <strong>2 hours</strong>, 
+                    increase sales by <strong>7x</strong> and make decisions based on real data.
+                </h2>
+                <div class="hero-stats">
+                    <div class="stat-item"><div class="stat-number">93%</div><div class="stat-label">Accuracy</div></div>
+                    <div class="stat-item"><div class="stat-number">7x</div><div class="stat-label">Sales Increase</div></div>
+                    <div class="stat-item"><div class="stat-number">2 weeks</div><div class="stat-label">Implementation</div></div>
+                    <div class="stat-item"><div class="stat-number">400+</div><div class="stat-label">Connectors</div></div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#demo" class="btn-primary">Watch Demo</a>
+                    <a href="#features" class="btn-secondary">Explore Features</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="page-section bg-white">
+        <div class="container">
+            <h2 class="section-title">How Insight Builder Works</h2>
+            <p class="section-description">Our platform transforms your fragmented data into a unified source of truth, powered by advanced AI.</p>
+
+            <div class="tabs-navigation">
+                <button class="tab-button active" data-tab="connectivity">Connectivity</button>
+                <button class="tab-button" data-tab="ai">Advanced AI</button>
+                <button class="tab-button" data-tab="insights">Actionable Insights</button>
+                <button class="tab-button" data-tab="automation">Automation</button>
+            </div>
+
+            <div class="tabs-content">
+                <div class="tab-panel active" id="connectivity">
+                    <div class="feature-showcase">
+                        <div class="feature-visual">
+                            <img src="../img/isb_img2.png" style="width: 80%; aspect-ratio: 16 / 9; object-fit: cover;" alt="Universal Connectivity Visual">
+                        </div>
+                        <div class="feature-details">
+                            <h3>Universal Connectivity</h3>
+                            <p>More than 400 pre-built connectors to integrate any system, platform or application in minutes, not months.</p>
+                            <div class="feature-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">⚡</div>
+                                    <div class="benefit-content"><h4>Instant Setup</h4><p>Configure connections in minutes with our drag-and-drop interface.</p></div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">🔒</div>
+                                    <div class="benefit-content"><h4>Enterprise Security</h4><p>End-to-end encryption and compliance with LGPD, SOC 2 and ISO 27001.</p></div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">🔄</div>
+                                    <div class="benefit-content"><h4>Real-Time Synchronization</h4><p>Data always up-to-date with latency less than 100ms.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="ai">
+                     <div class="feature-showcase">
+                        <div class="feature-visual">
+                             <img src="../img/isb_img3.png" style="width: 80%; aspect-ratio: 16 / 9; object-fit: cover;" alt="Advanced AI Visual">
+                        </div>
+                        <div class="feature-details">
+                            <h3>Advanced Proprietary AI</h3>
+                            <p>Machine learning algorithms developed specifically for business data analysis, with 30% higher accuracy than competitors.</p>
+                            <div class="feature-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">🧠</div>
+                                    <div class="benefit-content"><h4>Deep Learning</h4><p>Deep neural networks that automatically learn complex patterns.</p></div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">🎯</div>
+                                    <div class="benefit-content"><h4>Predictive Analytics</h4><p>Predicts trends and behaviors up to 6 months in advance.</p></div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">🔍</div>
+                                    <div class="benefit-content"><h4>Anomaly Detection</h4><p>Identifies problems and opportunities before they become critical.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="insights">
+                    <div class="feature-showcase">
+                        <div class="feature-visual">
+                             <img src="../img/isb_img4.png" style="width: 80%; aspect-ratio: 16 / 9; object-fit: cover;" alt="Actionable Insights Dashboard">
+                        </div>
+                        <div class="feature-details">
+                            <h3>Actionable Insights</h3>
+                            <p>Not just data, but specific and prioritized recommendations that generate measurable results immediately.</p>
+                            <div class="feature-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">⚡</div>
+                                    <div class="benefit-content"><h4>Real-Time</h4><p>Insights delivered in seconds, not hours or days.</p></div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">🎯</div>
+                                    <div class="benefit-content"><h4>Intelligent Prioritization</h4><p>Focus on opportunities with the highest impact on ROI.</p></div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">📱</div>
+                                    <div class="benefit-content"><h4>Custom Alerts</h4><p>Notifications via WhatsApp, email or dashboard.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="automation">
+                    <div class="feature-showcase">
+                        <div class="feature-visual">
+                            <img src="../img/isb_img5.png" style="width: 80%; aspect-ratio: 16 / 9; object-fit: cover;" alt="Automation Workflow">
+                        </div>
+                        <div class="feature-details">
+                            <h3>Automated Actions</h3>
+                            <p>Transform insights into automated actions, reducing manual work and accelerating your business results.</p>
+                            <div class="feature-benefits">
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">⚙️</div>
+                                    <div class="benefit-content"><h4>Workflow Automation</h4><p>Automate repetitive tasks based on real-time insights.</p></div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">🚀</div>
+                                    <div class="benefit-content"><h4>Sales Acceleration</h4><p>Automatically trigger sales actions when opportunities arise.</p></div>
+                                </div>
+                                <div class="benefit-item">
+                                    <div class="benefit-icon">🛡️</div>
+                                    <div class="benefit-content"><h4>Risk Mitigation</h4><p>Automate responses to mitigate risks and prevent churn.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-light">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-description">Hear from companies that have transformed their results with Insight Builder.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">“Insight Builder changed how we operate. We now have a clear view of our data and can act instantly.”</div>
+                    <div class="testimonial-author"><div class="author-name">João Silva</div><div class="author-title">CEO, Tech Solutions</div></div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">“The accuracy of the insights is incredible. We increased our B2B sales by 7x in just a few months.”</div>
+                    <div class="testimonial-author"><div class="author-name">Maria Oliveira</div><div class="author-title">Sales Director, Global Foods</div></div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">“Setup was incredibly fast, and the ROI was almost immediate. Highly recommend PlugIA.”</div>
+                    <div class="testimonial-author"><div class="author-name">Carlos Pereira</div><div class="author-title">Operations Manager, Manufacturing Co.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section tutorial-section">
+        <div class="container">
+            <div class="tutorial-header">
+                <div class="tutorial-icon">💡</div>
+                <div class="tutorial-text">
+                    <h3>Tutorial: Setup in 2 Hours</h3>
+                    <p>See how to connect ERP + CRM + WhatsApp</p>
+                </div>
+            </div>
+            <div class="tutorial-steps">
+                <div class="tutorial-step active" data-step="1"><div class="step-number">1</div><div class="step-content"><h4>Connect Systems</h4><p>Select your systems from the library</p><div class="step-duration">⏱️ 30 min</div></div></div>
+                <div class="tutorial-step" data-step="2"><div class="step-number">2</div><div class="step-content"><h4>Configure AI</h4><p>Define objectives and metrics</p><div class="step-duration">⏱️ 45 min</div></div></div>
+                <div class="tutorial-step" data-step="3"><div class="step-number">3</div><div class="step-content"><h4>Customize Dashboards</h4><p>Create visualizations for your team</p><div class="step-duration">⏱️ 30 min</div></div></div>
+                <div class="tutorial-step" data-step="4"><div class="step-number">4</div><div class="step-content"><h4>Configure Alerts</h4><p>Define how to receive insights</p><div class="step-duration">⏱️ 15 min</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="page-section demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2>See the Insight Builder in Action</h2>
+                    <p>Schedule a personalized demonstration and discover how we can transform your operations in just 2 hours.</p>
+                    <div class="demo-benefits">
+                        <div class="benefit">✅ Personalized demo for your industry</div>
+                        <div class="benefit">✅ Free analysis of your data</div>
+                        <div class="benefit">✅ Specific ROI proposal</div>
+                        <div class="benefit">✅ Implementation roadmap</div>
+                    </div>
+                    <div class="demo-cta">
+                        <a href="../pages/contact.html" class="btn-primary">Schedule Free Demo</a>
+                        <div class="demo-note">
+                            <span>📞 We call in 15 minutes</span>
+                            <span>⏱️ 30-minute Demo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-form">
+                    <h3>Schedule Demo</h3>
+                    <form class="form">
+                        <div class="form-group"><input type="text" placeholder="Full Name" required></div>
+                        <div class="form-group"><input type="email" placeholder="Corporate Email" required></div>
+                        <div class="form-group"><input type="text" placeholder="Company" required></div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Annual Revenue</option>
+                                <option value="10-50M">R$ 10-50 million</option>
+                                <option value="50-200M">R$ 50-200 million</option>
+                                <option value="200M+">Above R$ 200 million</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><textarea placeholder="What is your main data challenge?"></textarea></div>
+                        <button type="submit" class="btn-primary">Schedule Demo Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="../assets/menu-fixed.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // --- Dynamic Component Loader ---
+            const loadComponent = (url, containerId) => {
+                fetch(url)
+                    .then(response => response.ok ? response.text() : Promise.reject('Component not found'))
+                    .then(html => {
+                        document.getElementById(containerId).innerHTML = html;
+                        if (containerId === 'header-container' && typeof PlugIAMenu !== "undefined") {
+                            new PlugIAMenu();
+                        }
+                    })
+                    .catch(error => console.error(`Failed to load ${url}:`, error));
+            };
+            
+            loadComponent("../assets/header-premium.html", "header-container");
+            loadComponent("../assets/footer-premium.html", "footer-container");
+
+            // --- Demo Form Submission ---
+            const form = document.querySelector(".form");
+            if (form) {
+                form.addEventListener("submit", function(e) {
+                    e.preventDefault();
+                    alert("Thank you! We will contact you within 15 minutes to schedule your demo.");
+                    form.reset();
+                });
+            }
+
+            // --- Features Tab Functionality ---
+            const tabButtons = document.querySelectorAll(".tabs-navigation .tab-button");
+            const tabPanels = document.querySelectorAll(".tabs-content .tab-panel");
+
+            tabButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    tabButtons.forEach(btn => btn.classList.remove("active"));
+                    tabPanels.forEach(panel => panel.classList.remove("active"));
+                    button.classList.add("active");
+                    document.getElementById(button.dataset.tab).classList.add("active");
+                });
+            });
+
+            // --- Tutorial Steps Functionality ---
+            const tutorialSteps = document.querySelectorAll(".tutorial-step");
+            tutorialSteps.forEach(step => {
+                step.addEventListener("click", () => {
+                    tutorialSteps.forEach(s => s.classList.remove("active"));
+                    step.classList.add("active");
+                });
+            });
+        });
+    </script>
+</body>
+</html>

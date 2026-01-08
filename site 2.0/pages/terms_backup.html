@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="terms.page_title">Termos de Uso - PlugIA</title>
+    <meta name="description" data-i18n="terms.meta_description" content="Conheça nossos termos de uso e as condições para utilização de nossos serviços de inteligência artificial.">
+    
+    <link rel="icon" type="image/png" href="https://plugthink.com/wp-content/uploads/2022/07/plugicon512-150x150.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="https://plugia.com.br/img/logo_plugia_250_65_normal.png" alt="Logo PlugIA">
+            </a>
+            <nav class="nav">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link" data-i18n="header.products">Produtos</a>
+                    <div class="dropdown-menu">
+                        <a href="plugia.html" class="dropdown-item" data-i18n="header.plugia_platform">🚀 PlugIA Platform</a>
+                        <a href="insight-builder.html" class="dropdown-item" data-i18n="header.insight_builder">Insight Builder</a>
+                        <a href="fenix-ia.html" class="dropdown-item" data-i18n="header.fenix_ia">Fênix IA</a>
+                        <a href="thinkdoc.html" class="dropdown-item" data-i18n="header.thinkdoc">ThinkDoc</a>
+                        <a href="gpt-guru.html" class="dropdown-item" data-i18n="header.gpt_guru">GPT Guru</a>
+                        <a href="orbitjob.html" class="dropdown-item" data-i18n="header.orbitjob">OrbitJob</a>
+                        <a href="thinkdoc-gov.html" class="dropdown-item" data-i18n="header.thinkdoc_gov">ThinkDoc Licitações</a>
+                    </div>
+                </div>
+                <a href="solutions.html" class="nav-link" data-i18n="header.solutions">Soluções</a>
+                <a href="cases.html" class="nav-link" data-i18n="header.cases">Casos</a>
+                <a href="platform.html" class="nav-link" data-i18n="header.platform">Plataforma</a>
+                <a href="price.html" class="nav-link" data-i18n="header.pricing">Preços</a>
+                <a href="company.html" class="nav-link" data-i18n="header.company">Empresa</a>
+            </nav>
+            <div class="header-actions">
+                <div class="language-selector">
+                    <button id="language-toggle" class="language-btn">
+                        <span class="flag-icon">🇧🇷</span>
+                        <span class="language-text">PT</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <a href="#" data-lang="pt-br" class="language-option active">
+                            <span class="flag-icon">🇧🇷</span> <span data-i18n="language.portuguese">Português</span>
+                        </a>
+                        <a href="#" data-lang="en-us" class="language-option">
+                            <span class="flag-icon">🇺🇸</span> <span data-i18n="language.english">English</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="cta-secondary" onclick="openModal()" data-i18n="header.demo">Ver Demo</a>
+                <a href="#simulator" class="cta-primary" data-i18n="header.simulation">Fazer Simulação</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="terms-hero text-center">
+            <div class="container">
+                <h1 class="terms-hero-title" data-i18n="terms.hero.title">Termos de Uso</h1>
+                <p class="terms-hero-subtitle" data-i18n="terms.hero.subtitle">As condições para usar nossos serviços e plataforma.</p>
+            </div>
+        </section>
+
+        <section class="terms-content">
+            <div class="container">
+                <p data-i18n="terms.content.p1">Ao usar os serviços da PlugIA, você concorda com estes termos. Eles regem seu acesso e uso de nossa plataforma, garantindo uma relação transparente e segura.</p>
+                <h2 data-i18n="terms.content.h2_1">Uso da Plataforma</h2>
+                <p data-i18n="terms.content.p2">Você concorda em usar nossa plataforma apenas para fins lícitos e de acordo com a documentação fornecida. É proibido o uso indevido que possa comprometer a segurança ou a integridade de nossos sistemas.</p>
+                <h2 data-i18n="terms.content.h2_2">Propriedade Intelectual</h2>
+                <p data-i18n="terms.content.p3">A PlugIA retém todos os direitos sobre sua tecnologia e propriedade intelectual. Concedemos a você uma licença limitada e não exclusiva para usar nossos serviços conforme contratado.</p>
+                <h2 data-i18n="terms.content.h2_3">Limitação de Responsabilidade</h2>
+                <p data-i18n="terms.content.p4">Nossa responsabilidade é limitada ao valor pago pelos serviços no período em que ocorreu o evento. Não nos responsabilizamos por perdas indiretas ou lucros cessantes.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://plugia.com.br/img/logo_plugia_250_65_normal.png" alt="Logo PlugIA">
+                    </div>
+                    <p data-i18n="footer.description">
+                        Transformando empresas com inteligência artificial desde 2020. 
+                        Soluções que realmente funcionam.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/company/plugia" target="_blank" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/plugia.oficial" target="_blank" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.products">Produtos</h4>
+                    <ul>
+                        <li><a href="plugia.html" data-i18n="footer.plugia_platform">PlugIA Platform</a></li>
+                        <li><a href="insight-builder.html" data-i18n="footer.insight_builder">Insight Builder</a></li>
+                        <li><a href="fenix-ia.html" data-i18n="footer.fenix_ia">Fênix IA</a></li>
+                        <li><a href="thinkdoc.html" data-i18n="footer.thinkdoc">ThinkDoc</a></li>
+                        <li><a href="gpt-guru.html" data-i18n="footer.gpt_guru">GPT Guru</a></li>
+                        <li><a href="orbitjob.html" data-i18n="footer.orbitjob">OrbitJob</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.company">Empresa</h4>
+                    <ul>
+                        <li><a href="solutions.html" data-i18n="footer.solutions">Soluções</a></li>
+                        <li><a href="cases.html" data-i18n="footer.cases">Casos de Sucesso</a></li>
+                        <li><a href="company.html" data-i18n="footer.about">Sobre Nós</a></li>
+                        <li><a href="partnerships.html" data-i18n="footer.partnerships">Parcerias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.contact">Contato</h4>
+                    <div class="contact-info">
+                        <p>📧 <span data-i18n="footer.email">comercial@plugia.com.br</span></p>
+                        <p>📱 <span data-i18n="footer.phone">+55 (31) 3500-3599</span></p>
+                        <p>🕒 <span data-i18n="footer.hours">Segunda-Sexta 08:00 às 18:00</span></p>
+                        <p>📍 <span data-i18n="footer.address">Rua da Paisagem, 220 1o Andar Sala 11 – Vila da Serra, Nova Lima</span></p>
+                        <p><span data-i18n="footer.address_details">Minas Gerais, 34000-000 – Brasil</span></p>
+                        <p>
+                            <a href="https://wa.me//553135003599?text=Ol%C3%A1%20busco%20informa%C3%A7%C3%B5es%20sobre%20a%20PlugIA" 
+                               target="_blank" class="whatsapp-link">
+                                WhatsApp
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.support">Suporte</h4>
+                    <ul>
+                        <li><a href="faq.html" data-i18n="footer.faq">FAQ</a></li>
+                        <li><a href="contact.html" data-i18n="footer.contact">Contato</a></li>
+                        <li><a href="privacy.html" data-i18n="footer.privacy">Privacidade</a></li>
+                        <li><a href="terms.html" data-i18n="footer.terms">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">
+                    © 2024 PlugIA. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

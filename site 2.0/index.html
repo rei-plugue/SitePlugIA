@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlugIA - AI in Practice for Decision Makers Who Can't Wait</title>
+    <meta name="description" content="We transform your data into real revenue with artificial intelligence that actually works. Over 200 companies already trust our solutions to generate $30M+ in results.">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="assets/styles-premium-v2.css" as="style">
+    
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles-premium-v2.css">
+    <link rel="stylesheet" href="assets/index-complete.css">
+    <link rel="stylesheet" href="assets/final-corrections.css">
+    <link rel="stylesheet" href="assets/footer-compatibility.css">
+    <link rel="stylesheet" href="assets/hero-gradients.css">
+    <link rel="stylesheet" href="assets/popup-form.css">
+    <link rel="stylesheet" href="assets/contrast-improvements.css">
+    <link rel="stylesheet" href="assets/color-fixes.css">
+    
+    <!-- PWA -->
+    <link rel="manifest" href="manifest-en.json">
+    <meta name="theme-color" content="#1a1a2e">
+    
+    <!-- SEO -->
+    <meta property="og:title" content="PlugIA - AI in Practice">
+    <meta property="og:description" content="Inertia has become the most expensive decision. Transform your data into real revenue.">
+    <meta property="og:image" content="https://plugia.com.br/img/logo_plugia_250_65_normal.png">
+    <meta property="og:url" content="https://plugia.com.br/">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Structured Data for Dubai -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechCompany",
+        "name": "PlugIA",
+        "description": "AI solutions for enterprise data transformation",
+        "url": "https://plugia.com.br",
+        "logo": "https://plugia.com.br/img/logo_plugia_250_65_normal.png",
+        "foundingLocation": "Brazil",
+        "operatingArea": ["Middle East", "MENA", "Global"],
+        "serviceType": "Artificial Intelligence Solutions"
+    }
+    </script>
+    
+    <style>
+        
+        /* REMOVER SETAS dos dropdowns PlugIA Suite e Company */
+        .header-premium nav a svg,
+        header nav a svg,
+        nav a svg {
+            display: none !important;
+        }
+        
+        #sector-select {
+        background-color: #ffffff !important;
+        /* A cor do texto rosa que definimos antes é mantida */
+        color: #e91e63;
+    }
+
+    /* Tenta alterar o fundo das opções na lista (pode não funcionar em todos os navegadores) */
+    #sector-select option {
+        background-color: #ffffff !important;
+        /* Usamos uma cor escura para o texto das opções para garantir a leitura em fundo branco */
+        color: #1a1a2e;
+    }
+        
+        /*  Centralizar conteúdo dos cards de Real-Time Insights, AI Precision, Results */
+        .stats-card .stat-header,
+        .stats-card .stat-value,
+        .stats-card .stat-subtitle {
+            text-align: center;
+        }
+        
+        .stats-card .stat-header {
+            justify-content: center;
+        }
+        
+        /*  Centralizar título "Unlock Your Operation's Untapped Potential with AI" */
+        .hero-title {
+            text-align: center;
+        }
+        
+        /*  Mover "Calculate ROI" mais para direita */
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            padding-left: 2rem;
+        }
+        
+        /*  Alinhar textos do evento Expand North Star e imagem - CENTRALIZAR BOTÃO */
+        .expand-north-info h2,
+        .expand-north-date,
+        .expand-north-description {
+            text-align: center;
+        }
+        
+        .expand-north-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .expand-north-info .btn-primary {
+            margin: 1.5rem auto 0;
+        }
+        
+        .expand-north-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 2rem;
+        }
+        
+        .expand-north-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        /*  Destacar e posicionar frase "PlugIA is bringing Brazilian innovation to Dubai!" */
+        .innovation-badge {
+            text-align: center;
+            margin: 0 auto 3rem;
+            display: block;
+            width: 100%;
+            font-size: 1.5rem !important;
+            font-weight: 700 !important;
+            padding: 1.5rem 2rem !important;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white !important;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+        }
+        
+        /*  Colocar frases ao lado dos desenhos nos challenge cards e diminuir ícones */
+        .challenge-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            text-align: left;
+        }
+        
+        .challenge-icon {
+            font-size: 2rem !important;
+            flex-shrink: 0;
+            margin-top: 0.5rem;
+        }
+        
+        .challenge-card h3 {
+            margin-top: 0;
+        }
+        
+        /*  Centralizar botão "Explore" */
+        .platform-text {
+            text-align: center;
+        }
+        
+        .platform-text h2,
+        .platform-text > p {
+            text-align: center;
+        }
+        
+        .platform-text .btn-primary {
+            margin: 2rem auto 0;
+            display: inline-block;
+        }
+        
+        .platform-features {
+            text-align: left;
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        
+        /*  ALINHAR TUDO dentro dos product cards */
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 2rem;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card h3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            text-align: center;
+        }
+        
+        .product-card .product-icon {
+            font-size: 1.5rem !important;
+            display: inline-block;
+        }
+        
+        .product-card p {
+            text-align: center;
+        }
+        
+        .product-card .product-stats {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .product-card .btn-primary,
+        .product-card .product-link {
+            margin: 1rem auto 0;
+            display: inline-block;
+        }
+        
+        /*  Card roxo com texto branco */
+        .product-card.solutions-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+            color: white;
+        }
+        
+        .product-card.solutions-card p {
+            color: #ffffff !important;
+            font-weight: 500;
+        }
+
+        .product-card.solutions-card h3 {
+             color: white !important;
+        }
+        
+        /*  GITEX - Centralizar tudo */
+        .gitex-info {
+            text-align: center;
+        }
+        
+        .gitex-info h2 {
+            text-align: center;
+        }
+        
+        .gitex-description {
+            text-align: center;
+        }
+        
+        .gitex-cta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
+        }
+        
+        .gitex-expansion {
+            text-align: center;
+            margin: 2rem auto;
+        }
+        
+        .gitex-expansion h4,
+        .gitex-expansion p {
+            text-align: center;
+        }
+        
+        /* GITEX details lado a lado e centralizados */
+        .gitex-details {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 2rem auto;
+        }
+        
+        .gitex-detail {
+            flex: 0 1 200px;
+            text-align: center;
+        }
+        
+        .gitex-detail-content {
+            text-align: center;
+        }
+        
+        /* ROI Section - GOURMETIZADO */
+        .roi-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 4rem 0;
+        }
+        
+        .roi-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1a1a2e;
+        }
+        
+        .roi-section > .container > p {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+        
+        .roi-calculator {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fd 100%);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.15);
+            max-width: 700px;
+            margin: 0 auto;
+            border: 2px solid #e8ecf7;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .roi-calculator::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .roi-calculator:hover {
+            box-shadow: 0 25px 70px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+            transform: translateY(-2px);
+        }
+        
+        .roi-calculator h3 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 800;
+        }
+        
+        .roi-badge {
+            text-align: center;
+            display: block;
+            margin: 0 auto 2rem;
+            width: fit-content;
+            padding: 0.6rem 1.8rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 25px;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        .roi-input-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .roi-input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1a1a2e;
+            font-size: 0.95rem;
+        }
+
+        .roi-input-group input,
+        .roi-input-group select {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            border: 2px solid #e8ecf7;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .roi-input-group input:focus,
+        .roi-input-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .roi-results {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+
+        .roi-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .roi-metric {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .roi-metric-label {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+        
+        .roi-metric-value {
+            color: white;
+            font-size: 2.8rem;
+            font-weight: 900;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            line-height: 1.2;
+            margin-top: 0.3rem;
+        }
+        
+        #simulate-btn {
+            width: 100%;
+            padding: 1.2rem 2rem;
+            font-size: 1.15rem;
+            margin-top: 1.5rem;
+            border-radius: 12px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        #simulate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /*  Card PlugIA Platform - CENTRALIZADO + Badge ROSA */
+        .products-grid .product-card.featured {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.4);
+            border: none;
+            position: relative;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .products-grid .product-card.featured h3,
+        .products-grid .product-card.featured p {
+            color: white;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .products-grid .product-card.featured .product-stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .products-grid .product-card.featured .product-stats .stat {
+            color: white;
+        }
+
+        .products-grid .product-card.featured .btn-primary {
+            background-color: white;
+            color: #667eea;
+            border: none;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+            transition: background-color 0.3s ease;
+            position: relative;
+            z-index: 1;
+            margin: 1rem auto 0;
+        }
+
+        .products-grid .product-card.featured .btn-primary:hover {
+            background-color: #f0f0f0;
+        }
+
+        .products-grid .product-card.featured .product-icon {
+            color: white !important;
+        }
+
+        .products-grid .product-card.featured .product-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+            color: white;
+            padding: 0.4rem 0.9rem;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            box-shadow: 0 2px 8px rgba(236, 72, 153, 0.4);
+            z-index: 2;
+        }
+        
+        /* Adicione este código ao seu <style> */
+
+        /* Torna a fonte dos valores principais fluida: 
+          ela se ajustará ao tamanho da tela, com um tamanho mínimo, 
+          preferido e máximo.
+        */
+        .roi-metric-value {
+            color: white;
+            /* ANTES: font-size: 2.8rem; */
+            font-size: clamp(1.8rem, 5vw, 2.8rem); /* <- MUDANÇA PRINCIPAL */
+            font-weight: 900;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            line-height: 1; /* Ajustado para melhor alinhamento */
+            margin-top: 0.3rem;
+            display: flex; /* Adicionado para alinhar número e unidade */
+            align-items: baseline; /* Alinha pela base do texto */
+            justify-content: center; /* Centraliza o conjunto */
+            gap: 0.4rem; /* Espaço entre número e unidade */
+        }
+        
+        /* Estiliza a unidade "months" para ser menor e mais leve, 
+          evitando que ela "estoure" para fora da caixa.
+        */
+        .roi-metric-value small {
+            font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* <- NOVA REGRA */
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Unlock Your Operation's Untapped Potential with AI
+                    </h1>
+                    <p class="hero-description">
+                        Our enterprise AI platform integrates legacy systems and unstructured data to optimize operational efficiency, mitigate risks, and generate sustainable revenue growth. Increase conversion by up to 7x and reduce operational costs by 40%.
+                    </p>
+
+                    <div class="hero-metrics">
+                        <div class="metric-card">
+                            <div class="metric-value">30%</div>
+                            <div class="metric-label">Faster</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">60%</div>
+                            <div class="metric-label">Fewer Hallucinations</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">7x</div>
+                            <div class="metric-label">Sales Increase</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn-primary">
+                            Request Presentation
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#roi-calculator" class="btn-secondary">Calculate ROI</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="stats-card">
+                        <div class="stat-header">
+                            <span class="stat-icon">📊</span>
+                            <span class="stat-title">Real-Time Insights</span>
+                        </div>
+                        <div class="stat-value">+340%</div>
+                        <div class="stat-subtitle">Average ROI</div>
+                    </div>
+
+                    <div class="stats-card pink">
+                        <div class="stat-header">
+                            <span class="stat-icon">🎯</span>
+                            <span class="stat-title">AI Precision</span>
+                        </div>
+                        <div class="stat-value">93.2%</div>
+                        <div class="stat-subtitle">Accuracy</div>
+                    </div>
+
+                    <div class="stats-card yellow">
+                        <div class="stat-header">
+                            <span class="stat-icon">⚡</span>
+                            <span class="stat-title">Results</span>
+                        </div>
+                        <div class="stat-value">10 weeks</div>
+                        <div class="stat-subtitle">Implementation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expand North Section -->
+    <section class="expand-north-section">
+        <div class="container">
+            <div class="expand-north-content">
+                <div class="expand-north-info">
+                    <h2>Meet Us at Expand North Star</h2>
+                    <div class="expand-north-date">October 12-15, 2025</div>
+                    <p class="expand-north-description">
+                        Come meet us at the Middle East's largest startup event!
+                    </p>
+                    <a href="#contact" class="btn-primary">Schedule Event Meeting</a>
+                </div>
+                <div class="expand-north-logo">
+                    <img src="img/Web_Banner_H6-B30.jpg" alt="Expand North Star 2025 - Dubai" class="banner-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation Section -->
+    <section class="innovation-section">
+        <div class="container">
+            <div class="innovation-badge">
+                PlugIA is bringing Brazilian innovation to Dubai! 🇧🇷
+            </div>
+
+           <div class="innovation-grid">
+            <div class="innovation-card">
+                <div class="innovation-icon">🏆</div>
+                <h3>2nd Place at InovaTech</h3>
+                <p>Nova Lima Municipality</p>
+                <div class="innovation-logo">
+                    <img src="img/logo_inovatech.png" alt="InovaTech Logo" style="max-height: 50px; width: auto;">
+                </div>
+            </div>
+
+            <div class="innovation-card">
+                <div class="innovation-icon">🌎</div>
+                <h3>Selected by Sebrae Minas</h3>
+                <p>Gitex 2025 Dubai</p>
+                <small>(Only 10 startups from Minas Gerais were selected)</small>
+                <div class="innovation-logo">
+                    <img src="img/logo-sebrae-transparente.png" alt="Sebrae Minas Logo" style="max-height: 50px; width: auto;">
+                </div>
+            </div>
+
+            <div class="innovation-card">
+                <div class="innovation-icon">🚀</div>
+                <h3>Chosen by ApexBrasil</h3>
+                <p>Expand North Star 2025</p>
+                <small>Only 50 startups from Brazil were selected</small>
+                <div class="innovation-logo">
+                    <img src="img/logo-apex-brasil-novo.png" alt="ApexBrasil Logo" style="max-height: 50px; width: auto;">
+                </div>
+            </div>
+        </div>
+
+            <div class="client-proof">
+                <p>These achievements prove our strength in AI solutions that already generate results for <strong>McDonald's, UAUIngleza</strong> and many others.</p>
+                
+               <div class="client-logos">
+                    <div class="logo-item">
+                        <img src="img/Nestle-Logo-650x366.png" alt="Nestlé Logo">
+                    </div>
+                    <div class="logo-item">
+                        <img src="img/mcdonalds-90.png" alt="McDonald's Logo">
+                    </div>
+                    <div class="logo-item">
+                        <img src="img/logo-uau_2025.webp" alt="UAIngleza Logo">
+                    </div>
+                    <div class="logo-item">
+                        <img src="img/PG_logo_dark_blue-thumb-big.png" alt="P&G Logo">
+                    </div>
+                    <div class="logo-item">
+                        <a href="#" class="other-clients-link">+ 30 more enterprise</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tagline">
+                <span class="tagline-icon">💡</span>
+                <strong>PlugIA</strong> — Applied artificial intelligence to transform businesses!
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenge Section -->    
+    <section class="challenge-section">
+        <div class="container">
+            <h2 class="section-title">The Challenge of Large-Scale Operational Intelligence</h2>
+            <p class="section-description">
+                Data fragmentation between legacy systems and unstructured sources (ERP, CRM, WhatsApp, documents, spreadsheets) prevents complete operational visibility, creating inefficiencies, risks, and lost revenue opportunities.
+            </p>
+
+            <div class="challenge-grid">
+                <div class="challenge-card">
+                    <div class="challenge-icon">📊</div>
+                    <div>
+                        <h3>Fragmented Data</h3>
+                        <p>Your most valuable data is scattered across dozens of systems that never communicate with each other.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-icon">⏰</div>
+                    <div>
+                        <h3>Lost Time</h3>
+                        <p>Weeks collecting data, months cleaning information, and years trying to make AI work.</p>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <div class="challenge-icon">💸</div>
+                    <div>
+                        <h3>Money Burned</h3>
+                        <p>Million-dollar AI investments that never leave the pilot phase and frustrated teams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section class="platform-section">
+        <div class="container">
+            <div class="platform-content">
+                <div class="platform-text">
+                    <h2>Data Intelligence for Complex Operations</h2>
+                    <p>Our platform unifies data from heterogeneous sources, providing a 360° view of your operation and enabling strategic decision automation.</p>
+
+                    <div class="platform-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🔗</div>
+                            <div class="feature-content">
+                                <h4>400+ Connectors</h4>
+                                <p>We connect via APIs to any system: cloud, ERP, CRM, WhatsApp, PDFs - without moving data</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">🤖</div>
+                            <div class="feature-content">
+                                <h4>Intelligent AI Agents</h4>
+                                <p>Read and normalize millions of messages, creating a single source of truth</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-content">
+                                <h4>Automatic Curation</h4>
+                                <p>System learns continuously and only asks for human review when necessary</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="/platform" class="btn-primary">Explore PlugIA Platform</a>
+                </div>
+
+                <div class="platform-visual">
+                    <div class="platform-visual">
+                        <img src="../img/plugia_or1.png" style="width: 100%;object-fit: fill;"" alt="PlugIA Platform">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <h2 class="section-title">Products That Actually Work</h2>
+            <p class="section-description">Each product solves a specific business problem</p>
+
+            <div class="products-grid">
+                <div class="product-card featured">
+                    <div class="product-badge">🆕 NEW</div>
+                    <h3><span class="product-icon">🔍</span> PlugIA Platform</h3>
+                    <p>The complete platform that connects all your data and transforms it into actionable insights with advanced AI.</p>
+                    
+                    <div class="product-stats">
+                        <div class="stat">200+ Integrations</div>
+                        <div class="stat">93% Precision</div>
+                        <div class="stat">24h Setup</div>
+                    </div>
+
+                    <a href="/pages/plugia.html" class="btn-primary">Explore Platform</a>
+                </div>
+
+                <div class="product-card">
+                    <h3><span class="product-icon">📊</span> Insight Builder</h3>
+                    <p>Connects ERP, CRM, WhatsApp and generates actionable insights with 93% accuracy in real-time.</p>
+                    <a href="pages/insight-builder.html" class="product-link">View Details →</a>
+                </div>
+
+                <div class="product-card">
+                    <h3><span class="product-icon">🔥</span> Phoenix AI</h3>
+                    <p>Resurrects failed AI projects by organizing data and creating models that actually work.</p>
+                    <a href="pages/fenix-ia.html" class="product-link">View Details →</a>
+                </div>
+
+                <div class="product-card">
+                    <h3><span class="product-icon">📄</span> ThinkDoc</h3>
+                    <p>AI that reads, analyzes, and extracts insights from complex documents in seconds, not weeks.</p>
+                    <a href="pages/thinkdoc.html" class="product-link">View Details →</a>
+                </div>
+
+                <div class="product-card solutions-card">
+                    <h3><span class="product-icon">🎯</span> PlugIA</h3>
+                    <p>Stop Analyzing Data. Start Generating Revenue.</p>
+                    <a href="pages/plugia.html" class="product-link">View Details →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <h2 class="section-title">Real Results from Real Clients</h2>
+            <p class="section-description">Over 30 enterprise clients trust PlugIA</p>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <h3>European Food Giant</h3>
+                    <div class="result-metric">7x</div>
+                    <div class="result-label">B2B Sales Increase</div>
+                    <div class="result-details">
+                        <div class="detail">$3 million in new revenue</div>
+                        <div class="detail">30x ROI in 4 months</div>
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <h3>McDonald's</h3>
+                    <div class="result-metric">60%</div>
+                    <div class="result-label">Dropout Reduction</div>
+                    <div class="result-details">
+                        <div class="detail">Optimized recruitment process</div>
+                        <div class="detail">2-week implementation</div>
+                    </div>
+                </div> 
+            </div>     
+        </div>
+    </section>   
+
+    <!-- ROI Calculator Section -->
+    <section id="roi-calculator" class="roi-section">
+    <div class="container">
+        <h2>Simulate PlugIA's ROI for Your Business</h2>
+        <p>Discover how much you can save and earn in 2 minutes</p>
+
+        <div class="roi-calculator">
+            <h3>Insight Simulator</h3>
+            <div class="roi-badge">🤖 AI Active</div>
+
+            <div class="roi-form">
+                <div class="roi-input-group">
+                    <label for="revenue-input">Annual Revenue (USD)</label>
+                    <input type="text" id="revenue-input" placeholder="e.g.: 50,000,000" style="color: #e91e63;" />
+                </div>
+                
+                <div class="roi-input-group">
+                    <label for="sector-select">Company Sector</label>
+                    <select id="sector-select" style="color: #e91e63;">
+                        <option value="retail">Retail & E-commerce</option>
+                        <option value="financial">Financial Services</option>
+                        <option value="manufacturing">Manufacturing & Industry</option>
+                        <option value="healthcare">Healthcare & Pharmaceutical</option>
+                        <option value="technology">Technology & Software</option>
+                        <option value="energy">Energy & Utilities</option>
+                        <option value="logistics">Logistics & Transportation</option>
+                        <option value="telecommunications">Telecommunications</option>
+                        <option value="agribusiness">Agribusiness</option>
+                        <option value="others">Other Sectors</option>
+                    </select>
+                </div>
+
+                <div id="sector-info" class="sector-info" style="display: none;"></div>
+
+                <div class="roi-results" id="roi-results">
+                    <div class="roi-grid">
+                        <div class="roi-metric">
+                            <div class="roi-metric-label">Estimated Annual Gain</div>
+                            <div class="roi-metric-value" id="estimated-gain">$0</div>
+                        </div>
+                        <div class="roi-metric">
+                            <div class="roi-metric-label">12-Month ROI</div>
+                            <div class="roi-metric-value" id="roi-value">0%</div>
+                        </div>
+                        <div class="roi-metric">
+                            <div class="roi-metric-label">Payback</div>
+                            <div class="roi-metric-value" id="payback-value">0 <small>months</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button id="simulate-btn" class="btn-primary">Complete Simulation</button>
+        </div>
+    </div>
+</section>
+
+    <!-- GITEX Section -->
+    <section class="gitex-section">
+        <div class="container">
+            <div class="gitex-content">
+                <div class="gitex-info">
+                    <h2>Find Us at GITEX Global 2025</h2>
+                    <p class="gitex-description">
+                        See our live demo and discover how we transform chaotic data into 
+                        real results, social impact, and economic inclusion.
+                    </p>
+
+                    <div class="gitex-details">
+                        <div class="gitex-detail">
+                            <div class="gitex-detail-icon">📍</div>
+                            <div class="gitex-detail-content">
+                                <h4>Location</h4>
+                                <p>Dubai World Trade Centre</p>
+                            </div>
+                        </div>
+
+                        <div class="gitex-detail">
+                            <div class="gitex-detail-icon">📅</div>
+                            <div class="gitex-detail-content">
+                                <h4>Date</h4>
+                                <p>October 14-18, 2025</p>
+                            </div>
+                        </div>
+
+                        <div class="gitex-detail">
+                            <div class="gitex-detail-icon">🏢</div>
+                            <div class="gitex-detail-content">
+                                <h4>Booth</h4>
+                                <p>Hall 4, Booth #AI-123</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gitex-cta">
+                        <a href="#contact" class="btn-primary">Schedule GITEX Meeting</a>
+                    </div>
+
+                    <div class="gitex-expansion">
+                        <h4>Global Expansion - MENA Region</h4>
+                        <p>Seeking strategic partners</p>
+                    </div>
+                </div>
+
+                <div class="gitex-logo">
+                    <div class="gitex-logo-placeholder"><img src="img/GITEX-GLOBAL-2023-logo-copy.jpg" alt="Gitex 2025" style="max-height: 150px; width: auto;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Premium -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script defer src="assets/menu-fixed.js"></script>
+    <script defer src="assets/popup-form.js"></script>
+    <script defer src="assets/roi-simulator-improved.js"></script>
+    <script src="assets/i18n-en.js" defer></script>
+    <script>
+    // Load Header and Footer
+    document.addEventListener('DOMContentLoaded', function() {
+        // Load Header
+        fetch('assets/header-premium.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-container').innerHTML = html;
+                // Initialize menu after header is loaded
+                if (typeof PlugIAMenu !== 'undefined') {
+                    new PlugIAMenu();
+                }
+            });
+
+        // Load Footer
+        fetch('assets/footer-premium.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-container').innerHTML = html;
+            });
+
+        // --- Improved ROI Calculator Logic ---
+        setTimeout(() => {
+            const revenueInput = document.getElementById('revenue-input');
+            const sectorSelect = document.getElementById('sector-select');
+            const estimatedGain = document.getElementById('estimated-gain');
+            const roiValue = document.getElementById('roi-value');
+            const paybackValue = document.getElementById('payback-value');
+
+            // Gain factors by sector (as a percentage of annual revenue)
+            const sectorGainFactors = {
+                'retail': 0.07,  // 7% gain factor
+                'financial': 0.09, // 9%
+                'manufacturing': 0.06, // 6%
+                'healthcare': 0.05, // 5%
+                'technology': 0.08, // 8%
+                'energy': 0.045, // 4.5%
+                'logistics': 0.065, // 6.5%
+                'telecommunications': 0.055, // 5.5%
+                'agribusiness': 0.04,  // 4%
+                'others': 0.06   // 6% as a general average
+            };
+
+            function calculateROI() {
+                if (!revenueInput || !sectorSelect || !estimatedGain || !roiValue || !paybackValue) {
+                    console.error('Simulator elements not found');
+                    return;
+                }
+                
+                const revenue = parseFloat(revenueInput.value.replace(/[^\d]/g, '')) || 0;
+                const sector = sectorSelect.value;
+                const gainFactor = sectorGainFactors[sector];
+                
+                if (revenue > 0 && gainFactor) {
+                    // 1. Calculate the estimated annual financial gain
+                    const annualGain = revenue * gainFactor;
+
+                    // 2. Reverse-engineer the investment cost to meet the 18-month ROI target
+                    // ROI = (Gain / Cost) => Cost = Gain / ROI
+                    // Gain over 18 months = (annualGain / 12) * 18 = annualGain * 1.5
+                    // Target ROI over 18 months = 350% or 3.5
+                    const investmentCost = (annualGain * 1.5) / 3.5;
+
+                    // 3. Calculate the 12-month ROI based on the derived investment cost
+                    const roi12Month = (annualGain / investmentCost) * 100;
+
+                    // 4. Calculate the payback period in months
+                    const paybackMonths = (investmentCost / (annualGain / 12));
+
+                    // 5. Update the display with formatted values
+                    estimatedGain.textContent = `$${Math.round(annualGain).toLocaleString('en-US')}`;
+                    roiValue.textContent = `${roi12Month.toFixed(0)}%`;
+                    paybackValue.innerHTML = `<span>${paybackMonths.toFixed(1)}</span><small>months</small>`;
+
+                } else {
+                    // Reset to default values if no revenue is entered
+                    estimatedGain.textContent = '$0';
+                    roiValue.textContent = '0%';
+                    paybackValue.innerHTML = `<span>0</span><small>months</small>`;
+                }
+            }
+
+            if (revenueInput && sectorSelect) {
+                revenueInput.addEventListener('input', calculateROI);
+                sectorSelect.addEventListener('change', calculateROI);
+                
+                // Perform an initial calculation in case there's a default value
+                calculateROI();
+            } else {
+                console.error('Simulator input elements not found!');
+            }
+        }, 500); // Reduced wait time as it should be faster
+
+        // Form submission logic (remains the same)
+        const form = document.querySelector('.form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you! We will contact you within 24 hours.');
+            });
+        }
+    });
+</script>
+
+    <!-- Service Worker -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw-en.js');
+        }
+    </script>
+</body>
+</html>

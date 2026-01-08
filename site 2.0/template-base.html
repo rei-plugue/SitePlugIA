@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PlugIA - AI in Practice. We transform data into real revenue for companies that can't wait.">
+    <meta name="keywords" content="AI, Artificial Intelligence, Business Intelligence, Digital Transformation, ROI, Data, Insights">
+    <meta name="author" content="PlugIA">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="PlugIA - AI in Practice">
+    <meta property="og:description" content="We transform data into real revenue for companies that can't wait.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://plugia.com.br/en">
+    <meta property="og:image" content="https://plugia.com.br/img/logo_plugia_250_65_normal.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PlugIA - AI in Practice">
+    <meta name="twitter:description" content="We transform data into real revenue for companies that can't wait.">
+    
+    <title>PlugIA - AI in Practice | Digital Transformation for Decision Makers</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/styles-premium.css">
+    
+    <!-- Structured Data for International SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechCompany",
+        "name": "PlugIA",
+        "description": "Enterprise AI solutions for data transformation and business intelligence",
+        "url": "https://plugia.com.br/en",
+        "logo": "https://plugia.com.br/img/logo_plugia_250_65_normal.png",
+        "foundingLocation": {
+            "@type": "Place",
+            "name": "Brazil"
+        },
+        "serviceArea": [
+            {
+                "@type": "Place",
+                "name": "Middle East"
+            },
+            {
+                "@type": "Place", 
+                "name": "MENA Region"
+            },
+            {
+                "@type": "Place",
+                "name": "Global"
+            }
+        ],
+        "serviceType": "Artificial Intelligence Solutions",
+        "knowsAbout": ["Artificial Intelligence", "Business Intelligence", "Data Analytics", "Digital Transformation"]
+    }
+    </script>
+    
+    <!-- Page Specific Styles -->
+    <!-- ADD PAGE SPECIFIC CSS HERE -->
+</head>
+<body>
+    <!-- Header Premium -->
+    <div id="header-container"></div>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- PAGE CONTENT GOES HERE -->
+    </main>
+    
+    <!-- Footer Premium -->
+    <div id="footer-container"></div>
+    
+    <!-- Scripts -->
+    <script src="../assets/script.js" defer></script>
+    <script src="../assets/menu-premium.js" defer></script>
+    <script>
+        // Load Header and Footer
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load Header (English version)
+            fetch('../assets/header-premium-en.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('header-container').innerHTML = html;
+                    // Reinitialize menu functionality
+                    initializeMenus();
+                })
+                .catch(error => console.error('Error loading English header:', error));
+            
+            // Load Footer (English version)
+            fetch('../assets/footer-premium-en.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('footer-container').innerHTML = html;
+                    // Reinitialize footer functionality
+                    initializeFooter();
+                })
+                .catch(error => console.error('Error loading English footer:', error));
+        });
+        
+        // Analytics and Performance
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../sw-en.js');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://plugia.com.br/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.php$
+Disallow: /send.php
+Disallow: /send_lead.php
+
+# Allow important pages
+Allow: /index.html
+Allow: /solutions.html
+Allow: /differentials.html
+Allow: /methodology.html
+Allow: /partnerships.html
+Allow: /faq.html
+Allow: /trends.html
+Allow: /contact.html
+Allow: /privacy.html
+Allow: /terms.html
+Allow: /cookies.html
+
+# Crawl delay
+Crawl-delay: 1

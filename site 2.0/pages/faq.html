@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlugIA FAQ | Your Questions About AI, Business & Partnerships Answered</title>
+    <meta name="description" content="Find clear, direct answers about our technology, business model, partnership opportunities, and the results we deliver.">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="../assets/styles-premium-v2.css" as="style">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles-premium-v2.css">
+    
+    <meta property="og:title" content="PlugIA FAQ | Your Questions Answered">
+    <meta property="og:description" content="Find clear, direct answers about our technology, business model, partnership opportunities, and the results we deliver.">
+    <meta property="og:image" content="https://plugia.com.br/img/logo_plugia_250_65_normal.png">
+
+    <style>
+        /* General Section Styling from Company Template */
+        .page-section { padding: 80px 0; }
+        .bg-white { background-color: white; }
+        .bg-light { background-color: #f8fafc; }
+        
+        .section-title { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; text-align: center; margin-bottom: 20px; }
+        .section-description { font-size: 1.25rem; color: #64748b; text-align: center; max-width: 800px; margin: 0 auto 60px; line-height: 1.6; }
+
+        /* Hero Section (Adapted from Company) */
+        .hero-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 120px 0 80px; color: white; text-align: center; }
+        .hero-badge { display: inline-block; background: rgba(233, 30, 99, 0.1); border: 1px solid #e91e63; color: #e91e63; padding: 8px 16px; border-radius: 20px; font-size: 0.875rem; font-weight: 600; margin-bottom: 20px; }
+        .hero-title { font-size: 3rem; font-weight: 800; margin-bottom: 16px; }
+        .hero-title .gradient-text { background: linear-gradient(135deg, #f06292 0%, #e91e63 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-subtitle { font-size: 1.5rem; font-weight: 400; margin-bottom: 40px; opacity: 0.9; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.6;}
+        .hero-cta { display: flex; gap: 16px; justify-content: center; }
+
+        /* NEW: FAQ Accordion Styles */
+        .faq-container { max-width: 900px; margin: 0 auto; }
+        .faq-item {
+            background: white; border-radius: 16px; margin-bottom: 1.5rem; overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); transition: all 0.3s ease; border: 1px solid #e2e8f0;
+        }
+        .faq-item:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
+        .faq-question {
+            padding: 1.5rem 2rem; margin: 0; background: white; cursor: pointer; position: relative;
+            transition: all 0.3s ease; font-weight: 600; color: #1a1a2e; font-size: 1.1rem;
+            border: none; width: 100%; text-align: left; display: flex; justify-content: space-between; align-items: center;
+        }
+        .faq-question::after {
+            content: '+'; font-size: 2rem; font-weight: 300; color: #e91e63;
+            transition: transform 0.3s ease; flex-shrink: 0; margin-left: 1rem;
+        }
+        .faq-item.active .faq-question { color: #e91e63; }
+        .faq-item.active .faq-question::after { transform: rotate(45deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; background: white; }
+        .faq-answer p { padding: 0 2rem 2rem; margin: 0; color: #64748b; line-height: 1.7; font-size: 1rem; border-top: 1px solid #f1f5f9; padding-top: 1.5rem; }
+        .faq-answer p strong { color: #1a1a2e; font-weight: 600; }
+        
+        /* Final CTA Section (Adapted from Company's Demo Section) */
+        .final-cta-section { background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); }
+        .final-cta-content { text-align: center; max-width: 800px; margin: 0 auto; }
+        .final-cta-content h2 { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; margin-bottom: 24px; }
+        .final-cta-content p { font-size: 1.25rem; color: #64748b; margin-bottom: 32px; line-height: 1.6; }
+        
+        /* Buttons */
+        .btn-primary { background: linear-gradient(135deg, #e91e63 0%, #f06292 100%); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; border: none; cursor: pointer; display: inline-block; text-align: center;}
+        .btn-primary:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3); }
+        .btn-secondary { background: transparent; color: white; border: 1px solid white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; display: inline-block; }
+        .btn-secondary:hover { background: white; color: #1a1a2e; transform: translateY(-2px); }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.5rem; }
+            .hero-subtitle { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">💡 Your Questions, Answered</div>
+                <h1 style="color: white;" class="hero-title">Frequently Asked <span class="gradient-text">Questions</span></h1>
+                <h2 style="color: white;" class="hero-subtitle">Find clear, direct answers about our technology, business model, partnership opportunities, and the results we deliver.</h2>
+                <div class="hero-cta">
+                    <a href="#faq-main" class="btn-primary">See All Questions</a>
+                    <a href="../pages/contact.html" class="btn-secondary">Contact an Expert</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq-main" class="page-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Find Your Answer</h2>
+            <p class="section-description">Questions are categorized to help you quickly find the information you need, whether you're a potential client, partner, or investor.</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">What differentiates PlugIA from other AI platforms?</button>
+                    <div class="faq-answer">
+                        <p>Our main differentiator is our focus on solving the <strong>disconnected data</strong> problem. While others focus on algorithms, we focus on preparing and organizing your data so that AI actually works. This results in 30% more speed, 93% accuracy, and a 25% reduction in token consumption.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How long does it take to see results?</button>
+                    <div class="faq-answer">
+                        <p>Our clients typically see a positive ROI within 4 to 6 months. Our case with the global food giant, for example, generated <strong>$3 million in new revenue in the short term</strong>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can we use PlugIA without a dedicated data science team?</button>
+                    <div class="faq-answer">
+                        <p>Yes. Our platform is designed to be used by business teams, not just data scientists. We provide all the necessary support and training for your team to extract maximum value from the platform.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How does PlugIA ensure the security of my data?</button>
+                    <div class="faq-answer">
+                        <p>Security is our top priority. We use state-of-the-art encryption, a zero-trust architecture, and are fully compliant with GDPR and other local data protection laws. Your data is processed in a secure and isolated environment.</p>
+                    </div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question">Do you offer Proof of Concept (POC) projects?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we conduct POCs for companies that want to validate our solution before signing a long-term contract. <strong>Important: our POCs are paid</strong>, as they involve the dedication of our specialized technical team and deliver real value. The POC investment is deducted from the contract value if you decide to proceed with us.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is there a long-term contract lock-in?</button>
+                    <div class="faq-answer">
+                        <p>No, our contracts are flexible and do not have a lock-in period. We believe the best way to retain our clients is through the continuous delivery of results and value, not through contractual obligations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What is PlugIA's business model?</button>
+                    <div class="faq-answer">
+                        <p>We operate on a B2B SaaS model with monthly subscription plans ranging from <strong>$1,000 to $12,000 USD</strong>, designed to scale with our clients' needs. This model provides predictable, recurring revenue and fosters long-term partnerships.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is your target market and expansion strategy?</button>
+                    <div class="faq-answer">
+                        <p>Our primary targets are the industrial, retail, and healthcare sectors. After validating our model with over 30 companies in LATAM, we are now focused on expanding into the MENA region, a market with a projected AI value of over <strong>$240 billion by 2030 (according to PwC)</strong>.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What does the ideal distributor/partner profile look like?</button>
+                    <div class="faq-answer">
+                        <p>We are looking for partners with proven experience in <strong>B2B software distribution</strong>, a strong familiarity with AI solutions, and established networks within our target industries. Our goal is to build strategic partnerships to accelerate market penetration.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is your core competitive advantage?</button>
+                    <div class="faq-answer">
+                        <p>Our competitive advantage is our <strong>proprietary methodology</strong> developed over 3 years. It optimizes data *before* it reaches AI models, which significantly reduces "hallucinations" and costs (25% fewer tokens) while increasing speed (30% faster) and accuracy (93%). This technology is adaptable to future AI model advancements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section final-cta-section">
+        <div class="container">
+            <div class="final-cta-content">
+                <h2>Still Have Questions?</h2>
+                <p>Our team of experts is ready to provide detailed answers for your specific business case. Let's talk.</p>
+                <a href="../pages/contact.html" class="btn-primary">Talk to an Expert</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="../assets/menu-fixed.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Standard component loader
+            const loadComponent = (url, containerId) => {
+                fetch(url)
+                    .then(response => response.ok ? response.text() : Promise.reject('Component not found'))
+                    .then(html => {
+                        document.getElementById(containerId).innerHTML = html;
+                        if (containerId === 'header-container' && typeof PlugIAMenu !== "undefined") {
+                            new PlugIAMenu();
+                        }
+                    })
+                    .catch(error => console.error(`Failed to load ${url}:`, error));
+            };
+            
+            loadComponent("../assets/header-premium.html", "header-container");
+            loadComponent("../assets/footer-premium.html", "footer-container");
+
+            // NEW: FAQ Accordion Functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                if (question && answer) {
+                    question.addEventListener('click', () => {
+                        const isActive = item.classList.contains('active');
+                        // Optional: close others when one is opened
+                        // faqItems.forEach(i => i.classList.remove('active'));
+                        // faqItems.forEach(i => i.querySelector('.faq-answer').style.maxHeight = null);
+
+                        if (!isActive) {
+                            item.classList.add('active');
+                            answer.style.maxHeight = answer.scrollHeight + 'px';
+                        } else {
+                            item.classList.remove('active');
+                            answer.style.maxHeight = null;
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

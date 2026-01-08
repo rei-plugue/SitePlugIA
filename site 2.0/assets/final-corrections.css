@@ -1,0 +1,268 @@
+/* ===== CORREÇÕES FINAIS PLUGIA ===== */
+
+/* Footer Contatos Horizontal */
+.footer-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.footer-contact-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.footer-contact-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #EC4899, #F472B6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.footer-contact-info {
+    flex: 1;
+}
+
+.footer-contact-label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.footer-contact-value {
+    font-size: 0.875rem;
+    color: white;
+    font-weight: 500;
+}
+
+.footer-contact-value a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact-value a:hover {
+    color: #F472B6;
+}
+
+/* WhatsApp Button Special */
+.footer-contact-item.whatsapp .footer-contact-icon {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.footer-whatsapp-btn {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 0.25rem;
+}
+
+.footer-whatsapp-btn:hover {
+    background: linear-gradient(135deg, #128C7E, #25D366);
+    transform: translateY(-1px);
+}
+
+/* Responsividade Footer */
+@media (max-width: 768px) {
+    .footer-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .footer-contact-item {
+        padding: 0.5rem;
+    }
+}
+
+/* Simulador ROI - Cores Melhoradas */
+.roi-section {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: #1e293b;
+}
+
+.roi-section h2 {
+    color: #0f172a;
+    text-shadow: none;
+}
+
+.roi-section p {
+    color: #475569;
+}
+
+.roi-calculator {
+    background: linear-gradient(135deg, #4338ca 0%, #3730a3 100%);
+    color: white;
+}
+
+.roi-input-group label {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+}
+
+.roi-input-group input,
+.roi-input-group select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.roi-input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.roi-input-group select option {
+    background: #4338ca;
+    color: white;
+}
+
+.roi-metrics {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.roi-metric-label {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.875rem;
+}
+
+.roi-metric-value {
+    color: #fbbf24;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Expand North - Logo Placeholder */
+.logo-placeholder {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.logo-placeholder:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Cores Hero Section - Mantidas */
+.hero-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #7c3aed 100%);
+}
+
+.hero-title {
+    color: white;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-description {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Stats Cards - Cores Melhoradas */
+.stats-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stats-card.blue {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.stats-card.pink {
+    background: rgba(236, 72, 153, 0.2);
+    border-color: rgba(236, 72, 153, 0.3);
+}
+
+.stats-card.purple {
+    background: rgba(139, 92, 246, 0.2);
+    border-color: rgba(139, 92, 246, 0.3);
+}
+
+.stats-card.yellow {
+    background: rgba(245, 158, 11, 0.2);
+    border-color: rgba(245, 158, 11, 0.3);
+}
+
+.stat-value {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.stat-title,
+.stat-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+}
+/* --- Ajuste para seções ocuparem a altura total da tela --- */
+
+#roi-calculator,
+.gitex-section {
+  min-height: 100vh;         /* Define a altura MÍNIMA como 100% da tela do dispositivo */
+  display: flex;             /* Ativa o layout flexível */
+  flex-direction: column;    /* Garante que o conteúdo interno se organize verticalmente */
+  justify-content: center;   /* Centraliza o conteúdo NO MEIO (verticalmente) da seção */
+  padding: 60px 20px;        /* Adiciona um espaçamento interno para evitar que o conteúdo cole nas bordas */
+}
+/* Card de Soluções - Opção Energético e Direto */
+.product-card.solutions-card {
+  background-color: #ffffff; /* Garante o fundo branco */
+  border: 1px solid #e0e0e0; /* Adiciona uma borda sutil, opcional */
+}
+
+.solutions-card h3 {
+  color: var(--plugia-pink); /* Título em rosa */
+}
+
+.solutions-card .product-icon {
+    /* Pode-se aplicar a cor ao ícone se ele for um SVG ou font icon */
+    color: var(--plugia-pink); 
+}
+
+/* Transforma o link em um botão */
+.solutions-card .product-link {
+  background-color: var(--plugia-pink);
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 15px; /* Adiciona espaço acima do botão */
+  display: inline-block; /* Permite aplicar padding e margin */
+  text-decoration: none;
+}

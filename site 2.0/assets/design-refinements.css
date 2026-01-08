@@ -1,0 +1,470 @@
+/* Refinamentos de Design e Consistência Visual - PlugIA Website */
+
+/* Melhorias na tipografia global */
+:root {
+    /* Tipografia refinada */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    /* Espaçamentos consistentes */
+    --section-padding: 6rem 0;
+    --section-padding-small: 4rem 0;
+    --container-padding: 0 1.5rem;
+    
+    /* Bordas e sombras refinadas */
+    --border-radius-card: 20px;
+    --border-radius-button: 50px;
+    --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --shadow-card-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+    --shadow-button: 0 4px 15px rgba(255, 0, 122, 0.3);
+    
+    /* Animações suaves */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Tipografia global melhorada */
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+/* Títulos com gradientes melhorados */
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--secondary-blue) 50%, var(--accent-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+}
+
+/* Seções hero padronizadas */
+.hero-section, .page-hero, .contact-hero, .expand-hero, .legal-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-purple) 50%, var(--primary-pink) 100%);
+    color: white;
+    text-align: center;
+}
+
+.hero-section::before, .page-hero::before, .contact-hero::before, .expand-hero::before, .legal-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    opacity: 0.95;
+    margin-bottom: 2rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Badges e elementos de destaque */
+.hero-badge, .card-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius-button);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-badge.exclusive, .card-badge.exclusive {
+    background: linear-gradient(135deg, #FF6B35 0%, #FF007A 100%);
+    border: none;
+    box-shadow: var(--shadow-button);
+}
+
+/* Cards padronizados */
+.card, .feature-card, .contact-card, .case-card, .product-card {
+    background: white;
+    border-radius: var(--border-radius-card);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before, .feature-card::before, .contact-card::before, .case-card::before, .product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-pink) 0%, var(--secondary-blue) 100%);
+    opacity: 0;
+    transition: var(--transition-smooth);
+}
+
+.card:hover, .feature-card:hover, .contact-card:hover, .case-card:hover, .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: var(--secondary-blue);
+}
+
+.card:hover::before, .feature-card:hover::before, .contact-card:hover::before, .case-card:hover::before, .product-card:hover::before {
+    opacity: 1;
+}
+
+/* Botões padronizados e melhorados */
+.btn, .cta-primary, .cta-secondary, .btn-primary, .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius-button);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before, .cta-primary::before, .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn:hover::before, .cta-primary:hover::before, .btn-primary:hover::before {
+    left: 100%;
+}
+
+.cta-primary, .btn-primary {
+    background: linear-gradient(135deg, var(--primary-pink) 0%, var(--secondary-pink) 100%);
+    color: white;
+    box-shadow: var(--shadow-button);
+}
+
+.cta-primary:hover, .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 0, 122, 0.4);
+    color: white;
+}
+
+.cta-secondary, .btn-secondary {
+    background: white;
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+}
+
+.cta-secondary:hover, .btn-secondary:hover {
+    background: var(--primary-blue);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Grids responsivos melhorados */
+.grid-2, .grid-3, .grid-4 {
+    display: grid;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-4 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Seções de conteúdo padronizadas */
+.section {
+    padding: var(--section-padding);
+}
+
+.section-small {
+    padding: var(--section-padding-small);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+/* Melhorias na navegação */
+.nav-container {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: var(--transition-smooth);
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem var(--container-padding);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: var(--transition-smooth);
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-pink);
+    background: rgba(255, 0, 122, 0.1);
+}
+
+/* Animações de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fade-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-fade-left {
+    animation: fadeInLeft 0.6s ease-out;
+}
+
+.animate-fade-right {
+    animation: fadeInRight 0.6s ease-out;
+}
+
+/* Estados de loading e interação */
+.loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid transparent;
+    border-top: 2px solid var(--primary-pink);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Melhorias de acessibilidade */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Focus states melhorados */
+*:focus {
+    outline: 3px solid var(--primary-pink);
+    outline-offset: 2px;
+}
+
+/* Responsividade global */
+@media (max-width: 768px) {
+    :root {
+        --section-padding: 4rem 0;
+        --section-padding-small: 3rem 0;
+        --container-padding: 0 1rem;
+    }
+    
+    .grid-2, .grid-3, .grid-4 {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .hero-section, .page-hero, .contact-hero, .expand-hero, .legal-hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .card, .feature-card, .contact-card, .case-card, .product-card {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn, .cta-primary, .cta-secondary, .btn-primary, .btn-secondary {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Melhorias específicas para elementos de marketing */
+.roi-highlight {
+    background: linear-gradient(135deg, #FFE066 0%, #FF6B35 100%);
+    color: #1A202C;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 0.25rem;
+    box-shadow: 0 2px 8px rgba(255, 224, 102, 0.3);
+}
+
+.urgency-element {
+    background: rgba(255, 107, 53, 0.1);
+    border: 1px solid rgba(255, 107, 53, 0.3);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.urgency-element .icon {
+    font-size: 1.5rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.social-proof {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(0, 123, 255, 0.05);
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+.social-proof .metric {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-blue);
+}
+
+.social-proof .label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}

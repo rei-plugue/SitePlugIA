@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Plans That Deliver a 30x Average ROI | PlugIA</title>
+    <meta name="description" content="Explore PlugIA's pricing plans, starting from $1,000/month. Discover a plan that fits your business needs and delivers an average 30x return on investment in just 4 months.">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="../assets/styles-premium-v2.css" as="style">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles-premium-v2.css">
+    
+    <meta property="og:title" content="PlugIA Pricing | Plans That Deliver a 30x Average ROI">
+    <meta property="og:description" content="Our plans are designed as an investment in your growth, not an expense. Discover the right plan for your business.">
+    <meta property="og:image" content="https://plugia.com.br/img/logo_plugia_250_65_normal.png">
+
+    <style>
+        /* Remover setas dos dropdowns */
+        header nav a svg,
+        .header-premium nav a svg,
+        nav a svg {
+            display: none !important;
+        }
+
+        /* General Section Styling */
+        .page-section { padding: 80px 0; }
+        .bg-white { background-color: white; }
+        .bg-light { background-color: #f8fafc; }
+        .section-title { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; text-align: center; margin-bottom: 20px; }
+        .section-description { font-size: 1.25rem; color: #64748b; text-align: center; max-width: 800px; margin: 0 auto 60px; line-height: 1.6; }
+
+        /* Hero Section - Centralizado */
+        .hero-section { 
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d4a8b 50%, #6a4c93 100%); 
+            padding: 100px 0 80px; 
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(233, 30, 99, 0.15);
+            border: 1px solid rgba(233, 30, 99, 0.4);
+            color: #f48fb1;
+            padding: 10px 24px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            background: linear-gradient(135deg, #f48fb1 0%, #e91e63 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            line-height: 1.7;
+            margin-bottom: 50px;
+            max-width: 750px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            width: 100%;
+            max-width: 850px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 36px 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(233, 30, 99, 0.3);
+        }
+
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #e91e63;
+            display: block;
+            margin-bottom: 12px;
+            line-height: 1;
+        }
+
+        .stat-label {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1rem;
+            line-height: 1.4;
+            font-weight: 400;
+        }
+        
+        /* New Pricing Cards Section */
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; align-items: flex-end; }
+        .pricing-card { background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 32px; text-align: center; display: flex; flex-direction: column; }
+        .pricing-card.featured { border: 2px solid #e91e63; transform: scale(1.05); z-index: 10; position: relative; }
+        .plan-badge { display: inline-block; background: #e91e63; color: white; padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 20px; position: absolute; top: -15px; left: 50%; transform: translateX(-50%); }
+        .plan-name { font-size: 1.5rem; font-weight: 600; color: #1a1a2e; margin-bottom: 8px; }
+        .plan-description { font-size: 0.95rem; color: #64748b; margin-bottom: 24px; min-height: 40px; }
+        .plan-price { margin-bottom: 24px; }
+        .price-value { font-size: 3rem; font-weight: 800; color: #1a1a2e; }
+        .price-period { color: #64748b; }
+        .plan-features { list-style: none; padding: 0; text-align: left; margin-bottom: 32px; flex-grow: 1; }
+        .plan-features li { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; color: #334155; }
+        .plan-features .icon { color: #10b981; }
+        .plan-cta { margin-top: auto; }
+
+        /* Partners Section */
+        .partner-section { background-image: linear-gradient(rgba(26, 26, 46, 0.9), rgba(26, 26, 46, 0.9)), url('https://i.imgur.com/gK2T3zR.png'); background-size: cover; background-position: center; color: white; border-radius: 16px; padding: 60px; }
+        .partner-section h2 { color: white; text-align: left; }
+        .partner-text ul { list-style: none; padding: 0; margin-top: 32px; }
+        .partner-text li { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 20px; font-size: 1.1rem; }
+        .partner-text .icon { color: #e91e63; font-weight: bold; margin-top: 5px; font-size: 1.5rem; }
+
+        /* FAQ Section */
+        .faq-grid { max-width: 800px; margin: 0 auto; }
+        .faq-item { border-bottom: 1px solid #e2e8f0; padding: 24px 0; }
+        .faq-question { font-size: 1.25rem; font-weight: 600; color: #1a1a2e; }
+        .faq-answer { font-size: 1rem; color: #64748b; line-height: 1.6; margin-top: 12px; }
+        
+        /* Demo Section */
+        .demo-section { background: #f8fafc; }
+        .demo-content { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .demo-text h2 { font-size: 2.5rem; font-weight: 700; color: #1a1a2e; margin-bottom: 24px; }
+        .demo-text p { font-size: 1.25rem; color: #64748b; line-height: 1.6; }
+        .form { display: flex; flex-direction: column; gap: 20px; }
+        .form-group input, .form-group textarea { width: 100%; padding: 12px 16px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem; }
+
+        .btn-primary { background: linear-gradient(135deg, #e91e63 0%, #f06292 100%); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; border: none; cursor: pointer; display: inline-block; text-align: center; width: 100%;}
+        .btn-secondary { background: transparent; color: #e91e63; border: 1px solid #e91e63; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; width: 100%; text-align: center; }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+            }
+            
+            .pricing-grid { grid-template-columns: 1fr; }
+            .pricing-card { max-width: 450px; margin: 0 auto; }
+            .pricing-card.featured { transform: scale(1); }
+        }
+        @media (max-width: 768px) {
+            .hero-content h1 { 
+                font-size: 2.5rem; 
+            }
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            .stat-value {
+                font-size: 2.5rem;
+            }
+            .demo-content { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-badge">💰 An Investment, Not an Expense</div>
+            <h1>Pricing That Pays for Itself</h1>
+            <p class="hero-subtitle">Our plans are designed to deliver massive value and a rapid return on investment. Discover a partnership that fuels your growth.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value">350%</span>
+                    <span class="stat-label">Average ROI</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">10 weeks</span>
+                    <span class="stat-label">Average return begins</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">2 Weeks</span>
+                    <span class="stat-label">Average Setup</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing-plans" class="page-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Find the Perfect Plan for Your Business</h2>
+            <p class="section-description">Transparent pricing for companies of all sizes. All plans are billed annually.</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="plan-name">Standard</h3>
+                    <p class="plan-description">For teams starting to automate and need core features.</p>
+                    <div class="plan-price"><span class="price-value">$1,500</span><span class="price-period">/ month</span></div>
+                    <ul class="plan-features">
+                        <li><span class="icon">✅</span> 1,000 Monthly Executions</li>
+                        <li><span class="icon">✅</span> 5 Users Included</li>
+                        <li><span class="icon">✅</span> Unlimited Seats</li>
+                        <li><span class="icon">✅</span> Associates Support Team</li>
+                        <li><span class="icon">✅</span> 2h Onboarding</li>
+                    </ul>
+                    <div class="plan-cta"><a href="contact.html" class="btn-secondary">Contact Sales</a></div>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="plan-badge">Recommended</div>
+                    <h3 class="plan-name">Pro</h3>
+                    <p class="plan-description">For growing businesses that need full service and senior support.</p>
+                    <div class="plan-price"><span class="price-value">$3,500</span><span class="price-period">/ month</span></div>
+                    <ul class="plan-features">
+                        <li><span class="icon">✅</span> 2,000 Monthly Executions</li>
+                        <li><span class="icon">✅</span> 10 Users Included</li>
+                        <li><span class="icon">✅</span> Unlimited Seats</li>
+                        <li><span class="icon">✅</span> <strong>Senior</strong> Support Team</li>
+                        <li><span class="icon">✅</span> 4h Onboarding</li>
+                    </ul>
+                    <div class="plan-cta"><a href="contact.html" class="btn-primary">Choose Pro</a></div>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="plan-name">Enterprise</h3>
+                    <p class="plan-description">For large organizations with high-volume and complex needs.</p>
+                    <div class="plan-price"><span class="price-value">$6,000</span><span class="price-period">/ month</span></div>
+                    <ul class="plan-features">
+                        <li><span class="icon">✅</span> 10,000 Monthly Executions</li>
+                        <li><span class="icon">✅</span> 50 Users Included</li>
+                        <li><span class="icon">✅</span> Unlimited Seats</li>
+                        <li><span class="icon">✅</span> <strong>Senior</strong> Support Team</li>
+                        <li><span class="icon">✅</span> 10h Onboarding</li>
+                    </ul>
+                    <div class="plan-cta"><a href="contact.html" class="btn-secondary">Contact Sales</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-white">
+        <div class="container">
+            <div class="partner-section">
+                <div class="partner-text">
+                    <h2 class="section-title">For Partners & Resellers</h2>
+                    <p>Join our mission to democratize AI. We offer attractive partnership models for consultants, agencies, and technology providers.</p>
+                    <ul>
+                        <li><span class="icon">💰</span><div><strong>Generous Margins:</strong> Benefit from a competitive commission structure with recurring revenue.</div></li>
+                        <li><span class="icon">🎓</span><div><strong>Full Training & Certification:</strong> We provide comprehensive training for your entire team.</div></li>
+                        <li><span class="icon">🤝</span><div><strong>Dedicated Support:</strong> Get access to a dedicated partner manager and priority technical support.</div></li>
+                    </ul>
+                    <a href="contact.html" class="btn-secondary" style="margin-top: 20px; max-width: 250px;">Become a Partner</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">How long does it take to see results?</h3>
+                    <p class="faq-answer">Our clients typically begin to see measurable results within 2 Weeks of implementation. The return begins in 10 weeks</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Is there a satisfaction guarantee?</h3>
+                    <p class="faq-answer">Yes. We are committed to our clients' success. Our team works in close partnership to ensure the established goals are met and that tangible value is delivered within the first few months.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Can the plans be customized?</h3>
+                    <p class="faq-answer">Absolutely. The "Ultra" plan ($12,500/month) includes an exclusive VPC and premium support. We also frequently create custom packages for enterprises with specific needs. Contact us to discuss a tailored solution.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you offer special projects with dedicated teams?</h3>
+                    <p class="faq-answer">Yes. For complex challenges or unique demands, we assemble dedicated project teams to develop bespoke AI solutions tailored to your specific strategic goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="page-section demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2>Ready to See Your ROI Skyrocket?</h2>
+                    <p>Schedule a personalized demo and let us show you how PlugIA can transform your data into your most valuable asset.</p>
+                </div>
+                <div class="demo-form">
+                    <h3>Schedule a Strategic Demo</h3>
+                    <form class="form">
+                        <div class="form-group"><input type="text" placeholder="Full Name" required></div>
+                        <div class="form-group"><input type="email" placeholder="Business Email" required></div>
+                        <div class="form-group"><input type="text" placeholder="Company" required></div>
+                        <button type="submit" class="btn-primary">Schedule Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script src="../assets/menu-fixed.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loadComponent = (url, containerId) => {
+                fetch(url)
+                    .then(response => response.ok ? response.text() : Promise.reject('Component not found'))
+                    .then(html => {
+                        document.getElementById(containerId).innerHTML = html;
+                        if (containerId === 'header-container' && typeof PlugIAMenu !== "undefined") {
+                            new PlugIAMenu();
+                        }
+                    })
+                    .catch(error => console.error(`Failed to load ${url}:`, error));
+            };
+            
+            loadComponent("../assets/header-premium.html", "header-container");
+            loadComponent("../assets/footer-premium.html", "footer-container");
+        });
+    </script>
+</body>
+</html>
